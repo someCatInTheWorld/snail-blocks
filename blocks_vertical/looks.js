@@ -737,7 +737,7 @@ Blockly.Blocks['looks_goTargetLayer'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "go %1 of %2",
+      "message0": "go %1 %2",
       "args0": [
         {
           "type": "field_dropdown",
