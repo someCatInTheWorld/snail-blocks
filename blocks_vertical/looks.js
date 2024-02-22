@@ -730,6 +730,34 @@ Blockly.Blocks['looks_goforwardbackwardlayers'] = {
   }
 };
 
+Blockly.Blocks['looks_goTargetLayer'] = {
+  /**
+   * "Go infront/behind [sprite]" Block.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.LOOKS_GOFORWARDBACKWARDLAYERS,
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "FORWARD_BACKWARD",
+          "options": [
+            ['infront', 'infront'],
+            ['behind', 'behind']
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "VISIBLE_OPTION"
+        }
+      ],
+      "category": Blockly.Categories.looks,
+      "extensions": ["colours_looks", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks["looks_layersSetLayer"] = {
   init: function() {
     this.jsonInit({
