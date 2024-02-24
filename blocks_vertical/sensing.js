@@ -824,6 +824,20 @@ Blockly.Blocks['sensing_username'] = {
   }
 };
 
+Blockly.Blocks['sensing_loggedin'] = {
+  /**
+   * Block to report user's username
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": 'logged in?',
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_boolean"]
+    });
+  }
+};
+
 Blockly.Blocks['sensing_userid'] = {
   /**
    * Block to report user's ID. Does not actually do anything. This is an
