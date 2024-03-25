@@ -42,6 +42,8 @@ for (const langCode in CombinedObject) {
         }
     }
 }
+// english should match english obj
+CombinedObject['en'] = EnObject;
 
 console.log('Saving to file...');
 let fileText = `// This file was automatically generated.  Do not modify.

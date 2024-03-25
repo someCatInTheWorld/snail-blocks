@@ -14,5 +14,8 @@ Default language block files (JSON)
 
 - `en.json`: Script-generated file, used by scratch-blocks. Contains default english text in JSON.
 
+# /input
+Files used by the custom PenguinMod Scripts (NOT the Scratch scripts)
+
 # /output
 Script-generated files by the custom PenguinMod Scripts (NOT the Scratch scripts)
