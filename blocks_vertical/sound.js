@@ -171,7 +171,6 @@ Blockly.Blocks['sound_set_stop_fadeout_to'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -210,7 +209,6 @@ Blockly.Blocks['sound_play_at_seconds'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 5
           }
         }
@@ -244,7 +242,6 @@ Blockly.Blocks['sound_play_at_seconds_until_done'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 5
           }
         }
@@ -319,7 +316,6 @@ Blockly.Blocks['sound_seteffectto'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 100
           }
         }
@@ -353,7 +349,6 @@ Blockly.Blocks['sound_changeeffectby'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -417,7 +412,6 @@ Blockly.Blocks['sound_changevolumeby'] = {
           "name": "VOLUME",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": -10
           }
         }
@@ -442,7 +436,6 @@ Blockly.Blocks['sound_setvolumeto'] = {
           "name": "VOLUME",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 100
           }
         }

@@ -215,7 +215,6 @@ Blockly.Blocks['event_whengreaterthan'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -493,7 +492,6 @@ Blockly.Blocks["event_whenjavascript"] = {
           "name": "JS",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": ""
           }
         }

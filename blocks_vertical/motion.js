@@ -42,7 +42,6 @@ Blockly.Blocks['motion_movesteps'] = {
           "name": "STEPS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -67,7 +66,6 @@ Blockly.Blocks['motion_movebacksteps'] = {
           "name": "STEPS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -100,7 +98,6 @@ Blockly.Blocks['motion_moveupdownsteps'] = {
           "name": "STEPS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -131,7 +128,6 @@ Blockly.Blocks['motion_turnright'] = {
           "name": "DEGREES",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 15
           }
         }
@@ -162,7 +158,6 @@ Blockly.Blocks['motion_turnleft'] = {
           "name": "DEGREES",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 15
           }
         }
@@ -193,7 +188,6 @@ Blockly.Blocks['motion_turnrightaroundxy'] = {
           "name": "DEGREES",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 15
           }
         },
@@ -202,7 +196,6 @@ Blockly.Blocks['motion_turnrightaroundxy'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         },
@@ -211,7 +204,6 @@ Blockly.Blocks['motion_turnrightaroundxy'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -242,7 +234,6 @@ Blockly.Blocks['motion_turnleftaroundxy'] = {
           "name": "DEGREES",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 15
           }
         },
@@ -251,7 +242,6 @@ Blockly.Blocks['motion_turnleftaroundxy'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         },
@@ -260,7 +250,6 @@ Blockly.Blocks['motion_turnleftaroundxy'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -285,7 +274,6 @@ Blockly.Blocks['motion_pointindirection'] = {
           "name": "DIRECTION",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 90
           }
         }
@@ -364,7 +352,6 @@ Blockly.Blocks['motion_pointtowardsxy'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         },
@@ -373,7 +360,6 @@ Blockly.Blocks['motion_pointtowardsxy'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -447,7 +433,6 @@ Blockly.Blocks['motion_gotoxy'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         },
@@ -456,7 +441,6 @@ Blockly.Blocks['motion_gotoxy'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -504,7 +488,6 @@ Blockly.Blocks['motion_glidesecstoxy'] = {
           "name": "SECS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -513,7 +496,6 @@ Blockly.Blocks['motion_glidesecstoxy'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         },
@@ -522,7 +504,6 @@ Blockly.Blocks['motion_glidesecstoxy'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -547,7 +528,6 @@ Blockly.Blocks['motion_glidedirectionstepsinseconds'] = {
           "name": "STEPS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         },
@@ -566,7 +546,6 @@ Blockly.Blocks['motion_glidedirectionstepsinseconds'] = {
           "name": "SECS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -617,7 +596,6 @@ Blockly.Blocks['motion_glideto'] = {
           "name": "SECS",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -649,7 +627,6 @@ Blockly.Blocks['motion_changebyxy'] = {
           "name": "DX",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         },
@@ -658,7 +635,6 @@ Blockly.Blocks['motion_changebyxy'] = {
           "name": "DY",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -683,7 +659,6 @@ Blockly.Blocks['motion_changexby'] = {
           "name": "DX",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -708,7 +683,6 @@ Blockly.Blocks['motion_setx'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -733,7 +707,6 @@ Blockly.Blocks['motion_changeyby'] = {
           "name": "DY",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -758,7 +731,6 @@ Blockly.Blocks['motion_sety'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -820,7 +792,6 @@ Blockly.Blocks['motion_ifonxybounce'] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         },
@@ -829,7 +800,6 @@ Blockly.Blocks['motion_ifonxybounce'] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -928,7 +898,6 @@ Blockly.Blocks['motion_scroll_right'] = {
           "name": "DISTANCE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -955,7 +924,6 @@ Blockly.Blocks['motion_scroll_up'] = {
           "name": "DISTANCE",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }

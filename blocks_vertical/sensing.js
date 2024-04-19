@@ -262,7 +262,6 @@ Blockly.Blocks['sensing_askandwait'] = {
           "name": "QUESTION",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "What's your name?"
           }
         }
@@ -913,10 +912,8 @@ Blockly.Blocks["sensing_regextest"] = {
         {
           "type": "input_value",
           "name": "text",
-            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "foo bar"
           }
         },
@@ -925,7 +922,6 @@ Blockly.Blocks["sensing_regextest"] = {
           "name": "reg",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "foo"
           }
         },
@@ -934,7 +930,6 @@ Blockly.Blocks["sensing_regextest"] = {
           "name": "regrule",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "g"
           }
         }
@@ -956,7 +951,6 @@ Blockly.Blocks["sensing_thing_is_number"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -978,7 +972,6 @@ Blockly.Blocks["sensing_thing_has_text"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "world"
           }
         }
@@ -1000,7 +993,6 @@ Blockly.Blocks["sensing_thing_has_number"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "abc 10 def"
           }
         }
@@ -1034,7 +1026,6 @@ Blockly.Blocks["sensing_thing_is_text"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "world"
           }
         }
@@ -1058,7 +1049,6 @@ Blockly.Blocks["sensing_getspritewithattrib"] = {
           "name": "var",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "my variable"
           }
         },
@@ -1067,7 +1057,6 @@ Blockly.Blocks["sensing_getspritewithattrib"] = {
           "name": "val",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "0"
           }
         }
@@ -1088,7 +1077,6 @@ Blockly.Blocks['sensing_distanceTo'] = {
           "name": "x1",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         },
@@ -1097,7 +1085,6 @@ Blockly.Blocks['sensing_distanceTo'] = {
           "name": "y1",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": -10
           }
         },
@@ -1106,7 +1093,6 @@ Blockly.Blocks['sensing_distanceTo'] = {
           "name": "x2",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": -10
           }
         },
@@ -1115,7 +1101,6 @@ Blockly.Blocks['sensing_distanceTo'] = {
           "name": "y2",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -1136,7 +1121,6 @@ Blockly.Blocks['sensing_directionTo'] = {
           "name": "x2",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": -10
           }
         },
@@ -1145,7 +1129,6 @@ Blockly.Blocks['sensing_directionTo'] = {
           "name": "y2",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         },
@@ -1154,7 +1137,6 @@ Blockly.Blocks['sensing_directionTo'] = {
           "name": "x1",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": 10
           }
         },
@@ -1163,7 +1145,6 @@ Blockly.Blocks['sensing_directionTo'] = {
           "name": "y1",
           "defaultBlock": {
             "type": "math_number",
-            "fieldName": "NUM",
             "value": -10
           }
         }
@@ -1182,10 +1163,8 @@ Blockly.Blocks['sensing_isUpperCase'] = {
         {
           "type": "input_value",
           "name": "text",
-            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
-            "fieldName": "TEXT",
             "value": "A"
           }
         }
