@@ -77,7 +77,8 @@ Blockly.Blocks['sound_play'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -100,7 +101,8 @@ Blockly.Blocks['sound_playuntildone'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -123,7 +125,8 @@ Blockly.Blocks['sound_stop'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -146,7 +149,8 @@ Blockly.Blocks['sound_pause'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -179,7 +183,8 @@ Blockly.Blocks['sound_set_stop_fadeout_to'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -202,7 +207,8 @@ Blockly.Blocks['sound_play_at_seconds'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         },
         {
@@ -236,7 +242,8 @@ Blockly.Blocks['sound_play_at_seconds_until_done'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         },
         {
@@ -479,7 +486,8 @@ Blockly.Blocks["sound_isSoundPlaying"] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -504,7 +512,8 @@ Blockly.Blocks['sound_getLength'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -527,7 +536,8 @@ Blockly.Blocks['sound_getTimePosition'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],
@@ -550,7 +560,8 @@ Blockly.Blocks['sound_getSoundVolume'] = {
           "type": "input_value",
           "name": "SOUND_MENU",
           "defaultBlock": {
-            "type": "sound_sounds_menu"
+            "type": "sound_sounds_menu",
+            "fieldName": "SOUND_MENU"
           }
         }
       ],

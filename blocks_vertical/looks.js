@@ -315,7 +315,8 @@ Blockly.Blocks['looks_changeVisibilityOfSprite'] = {
           "type": "input_value",
           "name": "VISIBLE_OPTION",
           "defaultBlock": {
-            "type": "looks_changeVisibilityOfSprite_menu"
+            "type": "looks_changeVisibilityOfSprite_menu",
+            "fieldName": "VISIBLE_OPTION"
           }
         }
       ],
@@ -339,7 +340,8 @@ Blockly.Blocks['looks_changeVisibilityOfSpriteShow'] = {
           "type": "input_value",
           "name": "VISIBLE_OPTION",
           "defaultBlock": {
-            "type": "looks_changeVisibilityOfSprite_menu"
+            "type": "looks_changeVisibilityOfSprite_menu",
+            "fieldName": "VISIBLE_OPTION"
           }
         }
       ],
@@ -363,7 +365,8 @@ Blockly.Blocks['looks_changeVisibilityOfSpriteHide'] = {
           "type": "input_value",
           "name": "VISIBLE_OPTION",
           "defaultBlock": {
-            "type": "looks_changeVisibilityOfSprite_menu"
+            "type": "looks_changeVisibilityOfSprite_menu",
+            "fieldName": "VISIBLE_OPTION"
           }
         }
       ],
@@ -687,7 +690,8 @@ Blockly.Blocks['looks_switchcostumeto'] = {
           "type": "input_value",
           "name": "COSTUME",
           "defaultBlock": {
-            "type": "looks_costume"
+            "type": "looks_costume",
+            "fieldName": "COSTUME"
           }
         }
       ],
@@ -738,7 +742,8 @@ Blockly.Blocks['looks_switchbackdropto'] = {
           "type": "input_value",
           "name": "BACKDROP",
           "defaultBlock": {
-            "type": "looks_backdrops"
+            "type": "looks_backdrops",
+            "fieldName": "BACKDROP"
           }
         }
       ],
@@ -966,7 +971,8 @@ Blockly.Blocks['looks_switchbackdroptoandwait'] = {
           "type": "input_value",
           "name": "BACKDROP",
           "defaultBlock": {
-            "type": "looks_backdrops"
+            "type": "looks_backdrops",
+            "fieldName": "BACKDROP"
           }
         }
       ],
@@ -1113,7 +1119,8 @@ Blockly.Blocks["looks_getOtherSpriteVisible"] = {
           "type": "input_value",
           "name": "VISIBLE_OPTION",
           "defaultBlock": {
-            "type": "looks_getOtherSpriteVisible_menu"
+            "type": "looks_getOtherSpriteVisible_menu",
+            "fieldName": "VISIBLE_OPTION"
           }
         }
       ],
@@ -1214,14 +1221,16 @@ Blockly.Blocks['looks_getinputofcostume'] = {
           "type": "input_value",
           "name": "INPUT",
           "defaultBlock": {
-            "type": "looks_getinput_menu"
+            "type": "looks_getinput_menu",
+            "fieldName": "INPUT"
           }
         },
         {
           "type": "input_value",
           "name": "COSTUME",
           "defaultBlock": {
-            "type": "looks_costume"
+            "type": "looks_costume",
+            "fieldName": "COSTUME"
           }
         },
       ],

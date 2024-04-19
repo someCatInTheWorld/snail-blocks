@@ -264,7 +264,8 @@ Blockly.Blocks['event_broadcast'] = {
           "type": "input_value",
           "name": "BROADCAST_INPUT",
           "defaultBlock": {
-            "type": "event_broadcast_menu"
+            "type": "event_broadcast_menu",
+            "fieldName": "BROADCAST_OPTION"
           }
         }
       ],
@@ -287,7 +288,8 @@ Blockly.Blocks['event_broadcastandwait'] = {
           "type": "input_value",
           "name": "BROADCAST_INPUT",
           "defaultBlock": {
-            "type": "event_broadcast_menu"
+            "type": "event_broadcast_menu",
+            "fieldName": "BROADCAST_OPTION"
           }
         }
       ],

@@ -614,7 +614,8 @@ Blockly.Blocks['control_create_clone_of'] = {
           "type": "input_value",
           "name": "CLONE_OPTION",
           "defaultBlock": {
-            "type": "control_create_clone_of_menu"
+            "type": "control_create_clone_of_menu",
+            "fieldName": "CLONE_OPTION"
           }
         }
       ],
@@ -638,7 +639,8 @@ Blockly.Blocks['control_delete_clones_of'] = {
           "type": "input_value",
           "name": "CLONE_OPTION",
           "defaultBlock": {
-            "type": "control_create_clone_of_menu"
+            "type": "control_create_clone_of_menu",
+            "fieldName": "CLONE_OPTION"
           }
         }
       ],
@@ -700,7 +702,8 @@ Blockly.Blocks['control_stop_sprite'] = {
           "type": "input_value",
           "name": "STOP_OPTION",
           "defaultBlock": {
-            "type": "control_stop_sprite_menu"
+            "type": "control_stop_sprite_menu",
+            "fieldName": "STOP_OPTION"
           }
         }
       ],
@@ -742,7 +745,8 @@ Blockly.Blocks['control_run_as_sprite'] = {
           "type": "input_value",
           "name": "RUN_AS_OPTION",
           "defaultBlock": {
-            "type": "control_run_as_sprite_menu"
+            "type": "control_run_as_sprite_menu",
+            "fieldName": "RUN_AS_OPTION"
           }
         }
       ],
