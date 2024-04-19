@@ -70,7 +70,11 @@ Blockly.Blocks['data_setvariableto'] = {
         },
         {
           "type": "input_value",
-          "name": "VALUE"
+          "name": "VALUE",
+          "defaultBlock": {
+            "type": "text",
+            "value": "0"
+          }
         }
       ],
       "category": Blockly.Categories.data,
@@ -94,7 +98,11 @@ Blockly.Blocks['data_changevariableby'] = {
         },
         {
           "type": "input_value",
-          "name": "VALUE"
+          "name": "VALUE",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         }
       ],
       "category": Blockly.Categories.data,
@@ -241,7 +249,11 @@ Blockly.Blocks['data_addtolist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ITEM"
+          "name": "ITEM",
+          "defaultBlock": {
+            "type": "text",
+            "value": "thing"
+          }
         },
         {
           "type": "field_variable",
@@ -266,7 +278,11 @@ Blockly.Blocks['data_deleteoflist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "INDEX"
+          "name": "INDEX",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "field_variable",
@@ -312,11 +328,19 @@ Blockly.Blocks['data_insertatlist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ITEM"
+          "name": "ITEM",
+          "defaultBlock": {
+            "type": "text",
+            "value": "thing"
+          }
         },
         {
           "type": "input_value",
-          "name": "INDEX"
+          "name": "INDEX",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "field_variable",
@@ -341,7 +365,11 @@ Blockly.Blocks['data_replaceitemoflist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "INDEX"
+          "name": "INDEX",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "field_variable",
@@ -350,7 +378,11 @@ Blockly.Blocks['data_replaceitemoflist'] = {
         },
         {
           "type": "input_value",
-          "name": "ITEM"
+          "name": "ITEM",
+          "defaultBlock": {
+            "type": "text",
+            "value": "thing"
+          }
         }
       ],
       "category": Blockly.Categories.dataLists,
@@ -370,7 +402,11 @@ Blockly.Blocks['data_itemoflist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "INDEX"
+          "name": "INDEX",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "field_variable",
@@ -397,7 +433,11 @@ Blockly.Blocks['data_itemnumoflist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ITEM"
+          "name": "ITEM",
+          "defaultBlock": {
+            "type": "text",
+            "value": "thing"
+          }
         },
         {
           "type": "field_variable",
@@ -450,7 +490,11 @@ Blockly.Blocks['data_listcontainsitem'] = {
         },
         {
           "type": "input_value",
-          "name": "ITEM"
+          "name": "ITEM",
+          "defaultBlock": {
+            "type": "text",
+            "value": "thing"
+          }
         }
       ],
       "category": Blockly.Categories.dataLists,
@@ -525,7 +569,11 @@ Blockly.Blocks['data_itemexistslist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "INDEX"
+          "name": "INDEX",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "field_variable",
@@ -584,7 +632,11 @@ Blockly.Blocks['data_arraylist'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "VALUE"
+          "name": "VALUE",
+          "defaultBlock": {
+            "type": "text",
+            "value": '["a", "b", "c"]'
+          }
         },
         {
           "type": "field_variable",

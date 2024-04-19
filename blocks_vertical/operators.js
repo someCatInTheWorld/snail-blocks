@@ -39,11 +39,17 @@ Blockly.Blocks['operator_add'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM1"
+          "name": "NUM1",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         },
         {
           "type": "input_value",
-          "name": "NUM2"
+          "name": "NUM2",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -63,11 +69,17 @@ Blockly.Blocks['operator_subtract'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM1"
+          "name": "NUM1",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         },
         {
           "type": "input_value",
-          "name": "NUM2"
+          "name": "NUM2",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -87,11 +99,17 @@ Blockly.Blocks['operator_multiply'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM1"
+          "name": "NUM1",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         },
         {
           "type": "input_value",
-          "name": "NUM2"
+          "name": "NUM2",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -111,11 +129,17 @@ Blockly.Blocks['operator_divide'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM1"
+          "name": "NUM1",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         },
         {
           "type": "input_value",
-          "name": "NUM2"
+          "name": "NUM2",
+          "defaultBlock": {
+            "type": "math_number"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -135,11 +159,19 @@ Blockly.Blocks['operator_random'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "FROM"
+          "name": "FROM",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "input_value",
-          "name": "TO"
+          "name": "TO",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 10
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -159,11 +191,19 @@ Blockly.Blocks['operator_lt'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "OPERAND1"
+          "name": "OPERAND1",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "OPERAND2"
+          "name": "OPERAND2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "50"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -183,11 +223,19 @@ Blockly.Blocks['operator_equals'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "OPERAND1"
+          "name": "OPERAND1",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "OPERAND2"
+          "name": "OPERAND2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "50"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -207,11 +255,19 @@ Blockly.Blocks['operator_gt'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "OPERAND1"
+          "name": "OPERAND1",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "OPERAND2"
+          "name": "OPERAND2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "50"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -231,11 +287,19 @@ Blockly.Blocks['operator_gtorequal'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "OPERAND1"
+          "name": "OPERAND1",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "OPERAND2"
+          "name": "OPERAND2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "50"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -255,11 +319,19 @@ Blockly.Blocks['operator_ltorequal'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "OPERAND1"
+          "name": "OPERAND1",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "OPERAND2"
+          "name": "OPERAND2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "50"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -279,11 +351,19 @@ Blockly.Blocks['operator_notequal'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "OPERAND1"
+          "name": "OPERAND1",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "OPERAND2"
+          "name": "OPERAND2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "50"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -477,11 +557,19 @@ Blockly.Blocks['operator_join'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "STRING1"
+          "name": "STRING1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "apple "
+          }
         },
         {
           "type": "input_value",
-          "name": "STRING2"
+          "name": "STRING2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "banana"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -501,15 +589,27 @@ Blockly.Blocks['operator_join3'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "STRING1"
+          "name": "STRING1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "apple "
+          }
         },
         {
           "type": "input_value",
-          "name": "STRING2"
+          "name": "STRING2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "banana "
+          }
         },
         {
           "type": "input_value",
-          "name": "STRING3"
+          "name": "STRING3",
+          "defaultBlock": {
+            "type": "text",
+            "value": "pear"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -529,11 +629,19 @@ Blockly.Blocks['operator_letter_of'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "LETTER"
+          "name": "LETTER",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": "1"
+          }
         },
         {
           "type": "input_value",
-          "name": "STRING"
+          "name": "STRING",
+          "defaultBlock": {
+            "type": "text",
+            "value": "apple"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -553,7 +661,11 @@ Blockly.Blocks['operator_length'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "STRING"
+          "name": "STRING",
+          "defaultBlock": {
+            "type": "text",
+            "value": "apple"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -573,11 +685,19 @@ Blockly.Blocks['operator_contains'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "STRING1"
+          "name": "STRING1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "apple"
+          }
         },
         {
           "type": "input_value",
-          "name": "STRING2"
+          "name": "STRING2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "a"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -597,11 +717,19 @@ Blockly.Blocks['operator_mod'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM1"
+          "name": "NUM1",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "NUM2"
+          "name": "NUM2",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -621,7 +749,11 @@ Blockly.Blocks['operator_round'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM"
+          "name": "NUM",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -661,7 +793,11 @@ Blockly.Blocks['operator_mathop'] = {
         },
         {
           "type": "input_value",
-          "name": "NUM"
+          "name": "NUM",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -681,10 +817,18 @@ Blockly.Blocks['operator_advlog'] = {
         {
           "type": "input_value",
           "name": "NUM1",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         },
         {
           "type": "input_value",
-          "name": "NUM2"
+          "name": "NUM2",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -701,15 +845,27 @@ Blockly.Blocks["operator_regexmatch"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "text"
+          "name": "text",
+          "defaultBlock": {
+            "type": "text",
+            "value": "foo bar"
+          }
         },
         {
           "type": "input_value",
-          "name": "reg"
+          "name": "reg",
+          "defaultBlock": {
+            "type": "text",
+            "value": "foo"
+          }
         },
         {
           "type": "input_value",
-          "name": "regrule"
+          "name": "regrule",
+          "defaultBlock": {
+            "type": "text",
+            "value": "g"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -726,15 +882,27 @@ Blockly.Blocks["operator_replaceAll"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "text"
+          "name": "text",
+          "defaultBlock": {
+            "type": "text",
+            "value": "foo bar"
+          }
         },
         {
           "type": "input_value",
-          "name": "term"
+          "name": "term",
+          "defaultBlock": {
+            "type": "text",
+            "value": "foo"
+          }
         },
         {
           "type": "input_value",
-          "name": "res"
+          "name": "res",
+          "defaultBlock": {
+            "type": "text",
+            "value": "bar"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -751,15 +919,27 @@ Blockly.Blocks["operator_replaceFirst"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "text"
+          "name": "text",
+          "defaultBlock": {
+            "type": "text",
+            "value": "foo bar"
+          }
         },
         {
           "type": "input_value",
-          "name": "term"
+          "name": "term",
+          "defaultBlock": {
+            "type": "text",
+            "value": "foo"
+          }
         },
         {
           "type": "input_value",
-          "name": "res"
+          "name": "res",
+          "defaultBlock": {
+            "type": "text",
+            "value": "bar"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -776,15 +956,27 @@ Blockly.Blocks["operator_getLettersFromIndexToIndexInText"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "INDEX1"
+          "name": "INDEX1",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 2
+          }
         },
         {
           "type": "input_value",
-          "name": "INDEX2"
+          "name": "INDEX2",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 3
+          }
         },
         {
           "type": "input_value",
-          "name": "TEXT"
+          "name": "TEXT",
+          "defaultBlock": {
+            "type": "text",
+            "value": "Hello!"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -801,11 +993,19 @@ Blockly.Blocks["operator_readLineInMultilineText"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "LINE"
+          "name": "LINE",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "input_value",
-          "name": "TEXT"
+          "name": "TEXT",
+          "defaultBlock": {
+            "type": "text",
+            "value": "Text with multiple lines here"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -863,7 +1063,11 @@ Blockly.Blocks["operator_boolify"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ONE"
+          "name": "ONE",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -880,7 +1084,11 @@ Blockly.Blocks["operator_character_to_code"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ONE"
+          "name": "ONE",
+          "defaultBlock": {
+            "type": "text",
+            "value": "a"
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -897,7 +1105,11 @@ Blockly.Blocks["operator_code_to_character"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ONE"
+          "name": "ONE",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 97
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -914,15 +1126,27 @@ Blockly.Blocks["operator_lerpFunc"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ONE"
+          "name": "ONE",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "input_value",
-          "name": "TWO"
+          "name": "TWO",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 3
+          }
         },
         {
           "type": "input_value",
-          "name": "AMOUNT"
+          "name": "AMOUNT",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 0.5
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -939,7 +1163,11 @@ Blockly.Blocks["operator_advMath"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ONE"
+          "name": "ONE",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         },
         {
           "type": "field_dropdown",
@@ -952,7 +1180,11 @@ Blockly.Blocks["operator_advMath"] = {
         },
         {
           "type": "input_value",
-          "name": "TWO"
+          "name": "TWO",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -969,15 +1201,27 @@ Blockly.Blocks["operator_constrainnumber"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "inp"
+          "name": "inp",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 50
+          }
         },
         {
           "type": "input_value",
-          "name": "min"
+          "name": "min",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 1
+          }
         },
         {
           "type": "input_value",
-          "name": "max"
+          "name": "max",
+          "defaultBlock": {
+            "type": "math_number",
+            "value": 100
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -1030,11 +1274,19 @@ Blockly.Blocks["operator_indexOfTextInText"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1"
+          "name": "TEXT1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "world"
+          }
         },
         {
           "type": "input_value",
-          "name": "TEXT2"
+          "name": "TEXT2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "Hellow world!"
+          }
         }
       ],
       "category": Blockly.Categories.operator,
@@ -1051,11 +1303,19 @@ Blockly.Blocks["operator_lastIndexOfTextInText"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1"
+          "name": "TEXT1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "world"
+          }
         },
         {
           "type": "input_value",
-          "name": "TEXT2"
+          "name": "TEXT2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "Hellow world!"
+          }
         }
       ],
       "category": Blockly.Categories.operator,
@@ -1072,11 +1332,19 @@ Blockly.Blocks["operator_countAppearTimes"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1"
+          "name": "TEXT1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "a"
+          }
         },
         {
           "type": "input_value",
-          "name": "TEXT2"
+          "name": "TEXT2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "abc abc abc"
+          }
         }
       ],
       "category": Blockly.Categories.operator,
@@ -1093,11 +1361,19 @@ Blockly.Blocks["operator_textIncludesLetterFrom"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1"
+          "name": "TEXT1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "abcdef"
+          }
         },
         {
           "type": "input_value",
-          "name": "TEXT2"
+          "name": "TEXT2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "fgh"
+          }
         }
       ],
       "category": Blockly.Categories.operator,
@@ -1114,7 +1390,11 @@ Blockly.Blocks["operator_textStartsOrEndsWith"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1"
+          "name": "TEXT1",
+          "defaultBlock": {
+            "type": "text",
+            "value": "abcdef"
+          }
         },
         {
           "type": "field_dropdown",
@@ -1126,7 +1406,11 @@ Blockly.Blocks["operator_textStartsOrEndsWith"] = {
         },
         {
           "type": "input_value",
-          "name": "TEXT2"
+          "name": "TEXT2",
+          "defaultBlock": {
+            "type": "text",
+            "value": "abc"
+          }
         }
       ],
       "category": Blockly.Categories.operator,
@@ -1143,7 +1427,11 @@ Blockly.Blocks["operator_toUpperLowerCase"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT"
+          "name": "TEXT",
+          "defaultBlock": {
+            "type": "text",
+            "value": "ello"
+          }
         },
         {
           "type": "field_dropdown",
@@ -1168,7 +1456,11 @@ Blockly.Blocks["operator_javascript_output"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "JS"
+          "name": "JS",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
@@ -1185,7 +1477,11 @@ Blockly.Blocks["operator_javascript_boolean"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "JS"
+          "name": "JS",
+          "defaultBlock": {
+            "type": "text",
+            "value": ""
+          }
         }
       ],
       "category": Blockly.Categories.operators,
