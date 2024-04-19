@@ -41,8 +41,7 @@ Blockly.Blocks['sensing_touchingobject'] = {
           "type": "input_value",
           "name": "TOUCHINGOBJECTMENU",
           "defaultBlock": {
-            "type": "sensing_touchingobjectmenu",
-            "fieldName": "TOUCHINGOBJECTMENU"
+            "type": "sensing_touchingobjectmenu"
           }
         }
       ],
@@ -65,16 +64,14 @@ Blockly.Blocks['sensing_objecttouchingobject'] = {
           "type": "input_value",
           "name": "FULLTOUCHINGOBJECTMENU",
           "defaultBlock": {
-            "type": "sensing_fulltouchingobjectmenu",
-            "fieldName": "FULLTOUCHINGOBJECTMENU"
+            "type": "sensing_fulltouchingobjectmenu"
           }
         },
         {
           "type": "input_value",
           "name": "SPRITETOUCHINGOBJECTMENU",
           "defaultBlock": {
-            "type": "sensing_touchingobjectmenusprites",
-            "fieldName": "SPRITETOUCHINGOBJECTMENU"
+            "type": "sensing_touchingobjectmenusprites"
           }
         }
       ],
@@ -219,8 +216,7 @@ Blockly.Blocks['sensing_distanceto'] = {
           "type": "input_value",
           "name": "DISTANCETOMENU",
           "defaultBlock": {
-            "type": "sensing_distancetomenu",
-            "fieldName": "DISTANCETOMENU"
+            "type": "sensing_distancetomenu"
           }
         }
       ],
@@ -305,8 +301,7 @@ Blockly.Blocks['sensing_keypressed'] = {
           "type": "input_value",
           "name": "KEY_OPTION",
           "defaultBlock": {
-            "type": "sensing_keyoptions",
-            "fieldName": "KEY_OPTION"
+            "type": "sensing_keyoptions"
           }
         }
       ],
@@ -329,8 +324,7 @@ Blockly.Blocks['sensing_keyhit'] = {
           "type": "input_value",
           "name": "KEY_OPTION",
           "defaultBlock": {
-            "type": "sensing_keyoptions",
-            "fieldName": "KEY_OPTION"
+            "type": "sensing_keyoptions"
           }
         }
       ],
@@ -353,8 +347,7 @@ Blockly.Blocks['sensing_mousescrolling'] = {
           "type": "input_value",
           "name": "SCROLL_OPTION",
           "defaultBlock": {
-            "type": "sensing_scrolldirections",
-            "fieldName": "SCROLL_OPTION"
+            "type": "sensing_scrolldirections"
           }
         }
       ],
@@ -517,8 +510,7 @@ Blockly.Blocks['sensing_fingerdown'] = {
           "type": "input_value",
           "name": "FINGER_OPTION",
           "defaultBlock": {
-            "type": "sensing_fingeroptions",
-            "fieldName": "FINGER_OPTION"
+            "type": "sensing_fingeroptions"
           }
         }
       ],
@@ -541,8 +533,7 @@ Blockly.Blocks['sensing_fingertapped'] = {
           "type": "input_value",
           "name": "FINGER_OPTION",
           "defaultBlock": {
-            "type": "sensing_fingeroptions",
-            "fieldName": "FINGER_OPTION"
+            "type": "sensing_fingeroptions"
           }
         }
       ],
@@ -593,8 +584,7 @@ Blockly.Blocks['sensing_fingerx'] = {
           "type": "input_value",
           "name": "FINGER_OPTION",
           "defaultBlock": {
-            "type": "sensing_fingeroptions",
-            "fieldName": "FINGER_OPTION"
+            "type": "sensing_fingeroptions"
           }
         }
       ],
@@ -617,8 +607,7 @@ Blockly.Blocks['sensing_fingery'] = {
           "type": "input_value",
           "name": "FINGER_OPTION",
           "defaultBlock": {
-            "type": "sensing_fingeroptions",
-            "fieldName": "FINGER_OPTION"
+            "type": "sensing_fingeroptions"
           }
         }
       ],
@@ -639,12 +628,7 @@ Blockly.Blocks['sensing_setclipboard'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "ITEM",
-          "defaultBlock": {
-            "type": "text",
-            "fieldName": "TEXT",
-            "value": "Hello!"
-          }
+          "name": "ITEM"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -818,8 +802,7 @@ Blockly.Blocks['sensing_of'] = {
           "type": "input_value",
           "name": "OBJECT",
           "defaultBlock": {
-            "type": "sensing_of_object_menu",
-            "fieldName": "OBJECT"
+            "type": "sensing_of_object_menu"
           }
         }
       ],
@@ -1276,8 +1259,7 @@ Blockly.Blocks['sensing_getxyoftouchingsprite'] = {
           "type": "input_value",
           "name": "SPRITE",
           "defaultBlock": {
-            "type": "sensing_touchingobjectmenu",
-            "fieldName": "TOUCHINGOBJECTMENU"
+            "type": "sensing_touchingobjectmenu"
           }
         }
       ],

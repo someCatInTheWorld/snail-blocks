@@ -41,16 +41,14 @@ Blockly.Blocks['operator_add'] = {
           "type": "input_value",
           "name": "NUM1",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         },
         {
           "type": "input_value",
           "name": "NUM2",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         }
       ],
@@ -73,16 +71,14 @@ Blockly.Blocks['operator_subtract'] = {
           "type": "input_value",
           "name": "NUM1",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         },
         {
           "type": "input_value",
           "name": "NUM2",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         }
       ],
@@ -105,16 +101,14 @@ Blockly.Blocks['operator_multiply'] = {
           "type": "input_value",
           "name": "NUM1",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         },
         {
           "type": "input_value",
           "name": "NUM2",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         }
       ],
@@ -137,16 +131,14 @@ Blockly.Blocks['operator_divide'] = {
           "type": "input_value",
           "name": "NUM1",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         },
         {
           "type": "input_value",
           "name": "NUM2",
           "defaultBlock": {
-            "type": "math_number",
-            "fieldName": "NUM"
+            "type": "math_number"
           }
         }
       ],

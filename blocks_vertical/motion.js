@@ -397,8 +397,7 @@ Blockly.Blocks['motion_pointtowards'] = {
           "type": "input_value",
           "name": "TOWARDS",
           "defaultBlock": {
-            "type": "motion_pointtowards_menu",
-            "fieldName": "TOWARDS"
+            "type": "motion_pointtowards_menu"
           }
         }
       ],
@@ -481,8 +480,7 @@ Blockly.Blocks['motion_goto'] = {
           "type": "input_value",
           "name": "TO",
           "defaultBlock": {
-            "type": "motion_goto_menu",
-            "fieldName": "TO"
+            "type": "motion_goto_menu"
           }
         }
       ],
@@ -627,8 +625,7 @@ Blockly.Blocks['motion_glideto'] = {
           "type": "input_value",
           "name": "TO",
           "defaultBlock": {
-            "type": "motion_gildeto_menu",
-            "fieldName": "TO"
+            "type": "motion_gildeto_menu"
           }
         }
       ],
@@ -799,8 +796,7 @@ Blockly.Blocks['motion_ifonspritebounce'] = {
           "type": "input_value",
           "name": "SPRITE",
           "defaultBlock": {
-            "type": "motion_goto_menu",
-            "fieldName": "TO"
+            "type": "motion_goto_menu"
           }
         }
       ],
