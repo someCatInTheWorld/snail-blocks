@@ -1522,7 +1522,7 @@ Blockly.Block.prototype.appendInput_ = function(type, name, opt_defaultBlock) {
   if (opt_defaultBlock) {
     var newBlock = this.workspace.newBlock(opt_defaultBlock.type)
     newBlock.initSvg()
-    if (typeof type.value !== 'undefined' && newBlock.inputList[0] && newBlock.inputList[0].fieldRow[0] && newBlock.inputList[0].fieldRow[0].setValue) newBlock.inputList[0].fieldRow[0].setValue(type.value)
+    if (typeof type.value !== 'undefined') newBlock.inputList[0]?.fieldRow?.[0]?.setValue?.(type.value)
     newBlock.setShadow(true)
     newBlock.outputConnection.connect(connection)
     newBlock.render()
