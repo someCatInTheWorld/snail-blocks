@@ -162,6 +162,7 @@ Blockly.Blocks['operator_random'] = {
           "name": "FROM",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -170,6 +171,7 @@ Blockly.Blocks['operator_random'] = {
           "name": "TO",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -194,6 +196,7 @@ Blockly.Blocks['operator_lt'] = {
           "name": "OPERAND1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         },
@@ -202,6 +205,7 @@ Blockly.Blocks['operator_lt'] = {
           "name": "OPERAND2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "50"
           }
         }
@@ -226,6 +230,7 @@ Blockly.Blocks['operator_equals'] = {
           "name": "OPERAND1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         },
@@ -234,6 +239,7 @@ Blockly.Blocks['operator_equals'] = {
           "name": "OPERAND2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "50"
           }
         }
@@ -258,6 +264,7 @@ Blockly.Blocks['operator_gt'] = {
           "name": "OPERAND1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         },
@@ -266,6 +273,7 @@ Blockly.Blocks['operator_gt'] = {
           "name": "OPERAND2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "50"
           }
         }
@@ -290,6 +298,7 @@ Blockly.Blocks['operator_gtorequal'] = {
           "name": "OPERAND1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         },
@@ -298,6 +307,7 @@ Blockly.Blocks['operator_gtorequal'] = {
           "name": "OPERAND2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "50"
           }
         }
@@ -322,6 +332,7 @@ Blockly.Blocks['operator_ltorequal'] = {
           "name": "OPERAND1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         },
@@ -330,6 +341,7 @@ Blockly.Blocks['operator_ltorequal'] = {
           "name": "OPERAND2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "50"
           }
         }
@@ -354,6 +366,7 @@ Blockly.Blocks['operator_notequal'] = {
           "name": "OPERAND1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         },
@@ -362,6 +375,7 @@ Blockly.Blocks['operator_notequal'] = {
           "name": "OPERAND2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "50"
           }
         }
@@ -560,6 +574,7 @@ Blockly.Blocks['operator_join'] = {
           "name": "STRING1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "apple "
           }
         },
@@ -568,6 +583,7 @@ Blockly.Blocks['operator_join'] = {
           "name": "STRING2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "banana"
           }
         }
@@ -592,6 +608,7 @@ Blockly.Blocks['operator_join3'] = {
           "name": "STRING1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "apple "
           }
         },
@@ -600,6 +617,7 @@ Blockly.Blocks['operator_join3'] = {
           "name": "STRING2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "banana "
           }
         },
@@ -608,6 +626,7 @@ Blockly.Blocks['operator_join3'] = {
           "name": "STRING3",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "pear"
           }
         }
@@ -632,6 +651,7 @@ Blockly.Blocks['operator_letter_of'] = {
           "name": "LETTER",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": "1"
           }
         },
@@ -640,6 +660,7 @@ Blockly.Blocks['operator_letter_of'] = {
           "name": "STRING",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "apple"
           }
         }
@@ -664,6 +685,7 @@ Blockly.Blocks['operator_length'] = {
           "name": "STRING",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "apple"
           }
         }
@@ -688,6 +710,7 @@ Blockly.Blocks['operator_contains'] = {
           "name": "STRING1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "apple"
           }
         },
@@ -696,6 +719,7 @@ Blockly.Blocks['operator_contains'] = {
           "name": "STRING2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "a"
           }
         }
@@ -720,6 +744,7 @@ Blockly.Blocks['operator_mod'] = {
           "name": "NUM1",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         },
@@ -728,6 +753,7 @@ Blockly.Blocks['operator_mod'] = {
           "name": "NUM2",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         }
@@ -752,6 +778,7 @@ Blockly.Blocks['operator_round'] = {
           "name": "NUM",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         }
@@ -796,6 +823,7 @@ Blockly.Blocks['operator_mathop'] = {
           "name": "NUM",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         }
@@ -819,6 +847,7 @@ Blockly.Blocks['operator_advlog'] = {
           "name": "NUM1",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         },
@@ -827,6 +856,7 @@ Blockly.Blocks['operator_advlog'] = {
           "name": "NUM2",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         }
@@ -846,8 +876,10 @@ Blockly.Blocks["operator_regexmatch"] = {
         {
           "type": "input_value",
           "name": "text",
+            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo bar"
           }
         },
@@ -856,6 +888,7 @@ Blockly.Blocks["operator_regexmatch"] = {
           "name": "reg",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo"
           }
         },
@@ -864,6 +897,7 @@ Blockly.Blocks["operator_regexmatch"] = {
           "name": "regrule",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "g"
           }
         }
@@ -883,8 +917,10 @@ Blockly.Blocks["operator_replaceAll"] = {
         {
           "type": "input_value",
           "name": "text",
+            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo bar"
           }
         },
@@ -893,6 +929,7 @@ Blockly.Blocks["operator_replaceAll"] = {
           "name": "term",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo"
           }
         },
@@ -901,6 +938,7 @@ Blockly.Blocks["operator_replaceAll"] = {
           "name": "res",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "bar"
           }
         }
@@ -920,8 +958,10 @@ Blockly.Blocks["operator_replaceFirst"] = {
         {
           "type": "input_value",
           "name": "text",
+            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo bar"
           }
         },
@@ -930,6 +970,7 @@ Blockly.Blocks["operator_replaceFirst"] = {
           "name": "term",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo"
           }
         },
@@ -938,6 +979,7 @@ Blockly.Blocks["operator_replaceFirst"] = {
           "name": "res",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "bar"
           }
         }
@@ -959,6 +1001,7 @@ Blockly.Blocks["operator_getLettersFromIndexToIndexInText"] = {
           "name": "INDEX1",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 2
           }
         },
@@ -967,14 +1010,17 @@ Blockly.Blocks["operator_getLettersFromIndexToIndexInText"] = {
           "name": "INDEX2",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 3
           }
         },
         {
           "type": "input_value",
-          "name": "TEXT",
+          "name": "text",
+            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hello!"
           }
         }
@@ -996,14 +1042,17 @@ Blockly.Blocks["operator_readLineInMultilineText"] = {
           "name": "LINE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
         {
           "type": "input_value",
-          "name": "TEXT",
+          "name": "text",
+            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Text with multiple lines here"
           }
         }
@@ -1066,6 +1115,7 @@ Blockly.Blocks["operator_boolify"] = {
           "name": "ONE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         }
@@ -1087,6 +1137,7 @@ Blockly.Blocks["operator_character_to_code"] = {
           "name": "ONE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "a"
           }
         }
@@ -1108,6 +1159,7 @@ Blockly.Blocks["operator_code_to_character"] = {
           "name": "ONE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 97
           }
         }
@@ -1129,6 +1181,7 @@ Blockly.Blocks["operator_lerpFunc"] = {
           "name": "ONE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -1137,6 +1190,7 @@ Blockly.Blocks["operator_lerpFunc"] = {
           "name": "TWO",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 3
           }
         },
@@ -1145,6 +1199,7 @@ Blockly.Blocks["operator_lerpFunc"] = {
           "name": "AMOUNT",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 0.5
           }
         }
@@ -1166,6 +1221,7 @@ Blockly.Blocks["operator_advMath"] = {
           "name": "ONE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         },
@@ -1183,6 +1239,7 @@ Blockly.Blocks["operator_advMath"] = {
           "name": "TWO",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": ""
           }
         }
@@ -1204,6 +1261,7 @@ Blockly.Blocks["operator_constrainnumber"] = {
           "name": "inp",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 50
           }
         },
@@ -1212,6 +1270,7 @@ Blockly.Blocks["operator_constrainnumber"] = {
           "name": "min",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -1220,6 +1279,7 @@ Blockly.Blocks["operator_constrainnumber"] = {
           "name": "max",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 100
           }
         }
@@ -1277,6 +1337,7 @@ Blockly.Blocks["operator_indexOfTextInText"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "world"
           }
         },
@@ -1285,6 +1346,7 @@ Blockly.Blocks["operator_indexOfTextInText"] = {
           "name": "TEXT2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hellow world!"
           }
         }
@@ -1306,6 +1368,7 @@ Blockly.Blocks["operator_lastIndexOfTextInText"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "world"
           }
         },
@@ -1314,6 +1377,7 @@ Blockly.Blocks["operator_lastIndexOfTextInText"] = {
           "name": "TEXT2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hellow world!"
           }
         }
@@ -1335,6 +1399,7 @@ Blockly.Blocks["operator_countAppearTimes"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "a"
           }
         },
@@ -1343,6 +1408,7 @@ Blockly.Blocks["operator_countAppearTimes"] = {
           "name": "TEXT2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "abc abc abc"
           }
         }
@@ -1364,6 +1430,7 @@ Blockly.Blocks["operator_textIncludesLetterFrom"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "abcdef"
           }
         },
@@ -1372,6 +1439,7 @@ Blockly.Blocks["operator_textIncludesLetterFrom"] = {
           "name": "TEXT2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "fgh"
           }
         }
@@ -1393,6 +1461,7 @@ Blockly.Blocks["operator_textStartsOrEndsWith"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "abcdef"
           }
         },
@@ -1409,6 +1478,7 @@ Blockly.Blocks["operator_textStartsOrEndsWith"] = {
           "name": "TEXT2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "abc"
           }
         }
@@ -1427,9 +1497,11 @@ Blockly.Blocks["operator_toUpperLowerCase"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT",
+          "name": "text",
+            "fieldName": "TEXT",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "ello"
           }
         },
@@ -1459,6 +1531,7 @@ Blockly.Blocks["operator_javascript_output"] = {
           "name": "JS",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         }
@@ -1480,6 +1553,7 @@ Blockly.Blocks["operator_javascript_boolean"] = {
           "name": "JS",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": ""
           }
         }

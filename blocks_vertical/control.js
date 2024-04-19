@@ -82,6 +82,7 @@ Blockly.Blocks['control_repeat'] = {
           "name": "TIMES",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -127,6 +128,7 @@ Blockly.Blocks['control_repeatForSeconds'] = {
           "name": "TIMES",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         }
@@ -266,6 +268,7 @@ Blockly.Blocks['control_throw_error'] = {
           "name": "ERROR",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hello!"
           }
         }
@@ -360,6 +363,7 @@ Blockly.Blocks['control_wait'] = {
           "name": "DURATION",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         }
@@ -385,6 +389,7 @@ Blockly.Blocks['control_waitsecondsoruntil'] = {
           "name": "DURATION",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -538,6 +543,7 @@ Blockly.Blocks['control_for_each'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -834,6 +840,7 @@ Blockly.Blocks['control_set_counter'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -943,6 +950,7 @@ Blockly.Blocks["control_if_return_else_return"] = {
           "name": "TEXT1",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "foo"
           }
         },
@@ -951,6 +959,7 @@ Blockly.Blocks["control_if_return_else_return"] = {
           "name": "TEXT2",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "bar"
           }
         }
@@ -1029,6 +1038,7 @@ Blockly.Blocks['control_case'] = {
           "name": "CONDITION",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "ello"
           }
         }
@@ -1056,6 +1066,7 @@ Blockly.Blocks['control_case_next'] = {
           "name": "CONDITION",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "ello"
           }
         }

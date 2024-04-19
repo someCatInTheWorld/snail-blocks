@@ -73,6 +73,7 @@ Blockly.Blocks['data_setvariableto'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "0"
           }
         }
@@ -101,6 +102,7 @@ Blockly.Blocks['data_changevariableby'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         }
@@ -252,6 +254,7 @@ Blockly.Blocks['data_addtolist'] = {
           "name": "ITEM",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "thing"
           }
         },
@@ -281,6 +284,7 @@ Blockly.Blocks['data_deleteoflist'] = {
           "name": "INDEX",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -331,6 +335,7 @@ Blockly.Blocks['data_insertatlist'] = {
           "name": "ITEM",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "thing"
           }
         },
@@ -339,6 +344,7 @@ Blockly.Blocks['data_insertatlist'] = {
           "name": "INDEX",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -368,6 +374,7 @@ Blockly.Blocks['data_replaceitemoflist'] = {
           "name": "INDEX",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -381,6 +388,7 @@ Blockly.Blocks['data_replaceitemoflist'] = {
           "name": "ITEM",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "thing"
           }
         }
@@ -405,6 +413,7 @@ Blockly.Blocks['data_itemoflist'] = {
           "name": "INDEX",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -436,6 +445,7 @@ Blockly.Blocks['data_itemnumoflist'] = {
           "name": "ITEM",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "thing"
           }
         },
@@ -493,6 +503,7 @@ Blockly.Blocks['data_listcontainsitem'] = {
           "name": "ITEM",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "thing"
           }
         }
@@ -572,6 +583,7 @@ Blockly.Blocks['data_itemexistslist'] = {
           "name": "INDEX",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         },
@@ -635,6 +647,7 @@ Blockly.Blocks['data_arraylist'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": '["a", "b", "c"]'
           }
         },

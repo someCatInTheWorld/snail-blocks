@@ -92,7 +92,8 @@ Blockly.Blocks['field_textdropdown_test'] = {
       "args0": [
         {
           "type": "field_textdropdown",
-          "name": "TEXT",
+          "name": "text",
+            "fieldName": "TEXT",
           "options": [
             ['item1', 'item1'],
             ['item2', 'item2'],

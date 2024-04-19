@@ -1151,7 +1151,8 @@ Blockly.Blocks['argument_editor_boolean'] = {
       "args0": [
         {
           "type": "field_input_removable",
-          "name": "TEXT",
+          "name": "text",
+            "fieldName": "TEXT",
           "text": "foo"
         }
       ],
@@ -1171,7 +1172,8 @@ Blockly.Blocks['argument_editor_string_number'] = {
       "args0": [
         {
           "type": "field_input_removable",
-          "name": "TEXT",
+          "name": "text",
+            "fieldName": "TEXT",
           "text": "foo"
         }
       ],

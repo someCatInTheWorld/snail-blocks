@@ -42,6 +42,7 @@ Blockly.Blocks['looks_sayforsecs'] = {
           "name": "MESSAGE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hello!"
           }
         },
@@ -50,6 +51,7 @@ Blockly.Blocks['looks_sayforsecs'] = {
           "name": "SECS",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 2
           }
         }
@@ -74,6 +76,7 @@ Blockly.Blocks['looks_say'] = {
           "name": "MESSAGE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hello!"
           }
         }
@@ -98,6 +101,7 @@ Blockly.Blocks['looks_thinkforsecs'] = {
           "name": "MESSAGE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hello!"
           }
         },
@@ -106,6 +110,7 @@ Blockly.Blocks['looks_thinkforsecs'] = {
           "name": "SECS",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 2
           }
         }
@@ -130,6 +135,7 @@ Blockly.Blocks['looks_think'] = {
           "name": "MESSAGE",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Hello!"
           }
         }
@@ -150,6 +156,7 @@ Blockly.Blocks["looks_setFont"] = {
           "name":"font",
           "defaultBlock": {
             "type": "text",
+            "fieldName": "TEXT",
             "value": "Helvetica"
           }
         },
@@ -158,6 +165,7 @@ Blockly.Blocks["looks_setFont"] = {
           "name":"size",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 14
           }
         }
@@ -180,7 +188,8 @@ Blockly.Blocks["looks_setColor"] = {
           "options":[
             ["border","BUBBLE_STROKE"],
             ["fill","BUBBLE_FILL"],
-            ["text","TEXT_FILL"]
+            ["text",
+            "fieldName": "TEXT","TEXT_FILL"]
           ]
         },
         {
@@ -222,6 +231,7 @@ Blockly.Blocks["looks_setShape"] = {
           "name":"color",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -445,6 +455,7 @@ Blockly.Blocks['looks_changeeffectby'] = {
           "name": "CHANGE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 25
           }
         }
@@ -487,6 +498,7 @@ Blockly.Blocks['looks_seteffectto'] = {
           "name": "VALUE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 0
           }
         }
@@ -525,6 +537,7 @@ Blockly.Blocks['looks_changesizeby'] = {
           "name": "CHANGE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -549,6 +562,7 @@ Blockly.Blocks['looks_setsizeto'] = {
           "name": "SIZE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 100
           }
         }
@@ -597,6 +611,7 @@ Blockly.Blocks['looks_changestretchby'] = {
           "name": "CHANGE",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 10
           }
         }
@@ -623,6 +638,7 @@ Blockly.Blocks['looks_setstretchto'] = {
           "name": "STRETCH",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 100
           }
         }
@@ -805,6 +821,7 @@ Blockly.Blocks['looks_goforwardbackwardlayers'] = {
           "name": "NUM",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         }
@@ -837,6 +854,7 @@ Blockly.Blocks['looks_goTargetLayer'] = {
           "name": "VISIBLE_OPTION",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         }
@@ -859,6 +877,7 @@ Blockly.Blocks["looks_layersSetLayer"] = {
           "name": "NUM",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 1
           }
         }
@@ -997,6 +1016,7 @@ Blockly.Blocks["looks_setStretch"] = {
           "name": "X",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 100
           }
         },
@@ -1005,6 +1025,7 @@ Blockly.Blocks["looks_setStretch"] = {
           "name": "Y",
           "defaultBlock": {
             "type": "math_number",
+            "fieldName": "NUM",
             "value": 100
           }
         }
