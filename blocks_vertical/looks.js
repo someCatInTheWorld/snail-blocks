@@ -188,7 +188,8 @@ Blockly.Blocks["looks_setColor"] = {
           "options":[
             ["border","BUBBLE_STROKE"],
             ["fill","BUBBLE_FILL"],
-            ["text","TEXT_FILL"]
+            ["text",
+            "fieldName": "TEXT","TEXT_FILL"]
           ]
         },
         {
