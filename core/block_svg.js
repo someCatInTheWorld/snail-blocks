@@ -1247,8 +1247,8 @@ Blockly.BlockSvg.prototype.moveNumberedInputBefore = function(
  * @return {!Blockly.Input} The input object created.
  * @private
  */
-Blockly.BlockSvg.prototype.appendInput_ = function(type, name, opt_defaultBlock) {
-  var input = Blockly.BlockSvg.superClass_.appendInput_.call(this, type, name, opt_defaultBlock);
+Blockly.BlockSvg.prototype.appendInput_ = function(type, name) {
+  var input = Blockly.BlockSvg.superClass_.appendInput_.call(this, type, name);
 
   if (this.rendered) {
     this.render();
