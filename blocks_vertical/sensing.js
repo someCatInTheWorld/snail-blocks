@@ -39,10 +39,7 @@ Blockly.Blocks['sensing_touchingobject'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TOUCHINGOBJECTMENU",
-          "defaultBlock": {
-            "type": "sensing_touchingobjectmenu"
-          }
+          "name": "TOUCHINGOBJECTMENU"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -62,17 +59,11 @@ Blockly.Blocks['sensing_objecttouchingobject'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "FULLTOUCHINGOBJECTMENU",
-          "defaultBlock": {
-            "type": "sensing_fulltouchingobjectmenu"
-          }
+          "name": "FULLTOUCHINGOBJECTMENU"
         },
         {
           "type": "input_value",
-          "name": "SPRITETOUCHINGOBJECTMENU",
-          "defaultBlock": {
-            "type": "sensing_touchingobjectmenusprites"
-          }
+          "name": "SPRITETOUCHINGOBJECTMENU"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -161,10 +152,7 @@ Blockly.Blocks['sensing_touchingcolor'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "COLOR",
-          "defaultBlock": {
-            "type": "colour_picker"
-          }
+          "name": "COLOR"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -184,17 +172,11 @@ Blockly.Blocks['sensing_coloristouchingcolor'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "COLOR",
-          "defaultBlock": {
-            "type": "colour_picker"
-          }
+          "name": "COLOR"
         },
         {
           "type": "input_value",
-          "name": "COLOR2",
-          "defaultBlock": {
-            "type": "colour_picker"
-          }
+          "name": "COLOR2"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -214,10 +196,7 @@ Blockly.Blocks['sensing_distanceto'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "DISTANCETOMENU",
-          "defaultBlock": {
-            "type": "sensing_distancetomenu"
-          }
+          "name": "DISTANCETOMENU"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -259,11 +238,7 @@ Blockly.Blocks['sensing_askandwait'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "QUESTION",
-          "defaultBlock": {
-            "type": "text",
-            "value": "What's your name?"
-          }
+          "name": "QUESTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -298,10 +273,7 @@ Blockly.Blocks['sensing_keypressed'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "KEY_OPTION",
-          "defaultBlock": {
-            "type": "sensing_keyoptions"
-          }
+          "name": "KEY_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -321,10 +293,7 @@ Blockly.Blocks['sensing_keyhit'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "KEY_OPTION",
-          "defaultBlock": {
-            "type": "sensing_keyoptions"
-          }
+          "name": "KEY_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -344,10 +313,7 @@ Blockly.Blocks['sensing_mousescrolling'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "SCROLL_OPTION",
-          "defaultBlock": {
-            "type": "sensing_scrolldirections"
-          }
+          "name": "SCROLL_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -507,10 +473,7 @@ Blockly.Blocks['sensing_fingerdown'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "FINGER_OPTION",
-          "defaultBlock": {
-            "type": "sensing_fingeroptions"
-          }
+          "name": "FINGER_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -530,10 +493,7 @@ Blockly.Blocks['sensing_fingertapped'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "FINGER_OPTION",
-          "defaultBlock": {
-            "type": "sensing_fingeroptions"
-          }
+          "name": "FINGER_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -581,10 +541,7 @@ Blockly.Blocks['sensing_fingerx'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "FINGER_OPTION",
-          "defaultBlock": {
-            "type": "sensing_fingeroptions"
-          }
+          "name": "FINGER_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -604,10 +561,7 @@ Blockly.Blocks['sensing_fingery'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "FINGER_OPTION",
-          "defaultBlock": {
-            "type": "sensing_fingeroptions"
-          }
+          "name": "FINGER_OPTION"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -799,10 +753,7 @@ Blockly.Blocks['sensing_of'] = {
         },
         {
           "type": "input_value",
-          "name": "OBJECT",
-          "defaultBlock": {
-            "type": "sensing_of_object_menu"
-          }
+          "name": "OBJECT"
         }
       ],
       "output": true,
@@ -911,27 +862,15 @@ Blockly.Blocks["sensing_regextest"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "text",
-          "defaultBlock": {
-            "type": "text",
-            "value": "foo bar"
-          }
+          "name": "text"
         },
         {
           "type": "input_value",
-          "name": "reg",
-          "defaultBlock": {
-            "type": "text",
-            "value": "foo"
-          }
+          "name": "reg"
         },
         {
           "type": "input_value",
-          "name": "regrule",
-          "defaultBlock": {
-            "type": "text",
-            "value": "g"
-          }
+          "name": "regrule"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -948,11 +887,7 @@ Blockly.Blocks["sensing_thing_is_number"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "TEXT1"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -969,11 +904,7 @@ Blockly.Blocks["sensing_thing_has_text"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1",
-          "defaultBlock": {
-            "type": "text",
-            "value": "world"
-          }
+          "name": "TEXT1"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -990,11 +921,7 @@ Blockly.Blocks["sensing_thing_has_number"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1",
-          "defaultBlock": {
-            "type": "text",
-            "value": "abc 10 def"
-          }
+          "name": "TEXT1"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -1023,11 +950,7 @@ Blockly.Blocks["sensing_thing_is_text"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "TEXT1",
-          "defaultBlock": {
-            "type": "text",
-            "value": "world"
-          }
+          "name": "TEXT1"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -1046,19 +969,11 @@ Blockly.Blocks["sensing_getspritewithattrib"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "var",
-          "defaultBlock": {
-            "type": "text",
-            "value": "my variable"
-          }
+          "name": "var"
         },
         {
           "type": "input_value",
-          "name": "val",
-          "defaultBlock": {
-            "type": "text",
-            "value": "0"
-          }
+          "name": "val"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -1074,35 +989,19 @@ Blockly.Blocks['sensing_distanceTo'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "x1",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "x1"
         },
         {
           "type": "input_value",
-          "name": "y1",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": -10
-          }
+          "name": "y1"
         },
         {
           "type": "input_value",
-          "name": "x2",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": -10
-          }
+          "name": "x2"
         },
         {
           "type": "input_value",
-          "name": "y2",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "y2"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -1118,35 +1017,19 @@ Blockly.Blocks['sensing_directionTo'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "x2",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": -10
-          }
+          "name": "x2"
         },
         {
           "type": "input_value",
-          "name": "y2",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "y2"
         },
         {
           "type": "input_value",
-          "name": "x1",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "x1"
         },
         {
           "type": "input_value",
-          "name": "y1",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": -10
-          }
+          "name": "y1"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -1162,11 +1045,7 @@ Blockly.Blocks['sensing_isUpperCase'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "text",
-          "defaultBlock": {
-            "type": "text",
-            "value": "A"
-          }
+          "name": "text"
         }
       ],
       "category": Blockly.Categories.sensing,
@@ -1236,10 +1115,7 @@ Blockly.Blocks['sensing_getxyoftouchingsprite'] = {
         },
         {
           "type": "input_value",
-          "name": "SPRITE",
-          "defaultBlock": {
-            "type": "sensing_touchingobjectmenu"
-          }
+          "name": "SPRITE"
         }
       ],
       "category": Blockly.Categories.sensing,

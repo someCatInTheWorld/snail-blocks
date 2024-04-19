@@ -39,19 +39,11 @@ Blockly.Blocks['looks_sayforsecs'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "MESSAGE",
-          "defaultBlock": {
-            "type": "text",
-            "value": "Hello!"
-          }
+          "name": "MESSAGE"
         },
         {
           "type": "input_value",
-          "name": "SECS",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 2
-          }
+          "name": "SECS"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -71,11 +63,7 @@ Blockly.Blocks['looks_say'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "MESSAGE",
-          "defaultBlock": {
-            "type": "text",
-            "value": "Hello!"
-          }
+          "name": "MESSAGE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -95,19 +83,11 @@ Blockly.Blocks['looks_thinkforsecs'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "MESSAGE",
-          "defaultBlock": {
-            "type": "text",
-            "value": "Hello!"
-          }
+          "name": "MESSAGE"
         },
         {
           "type": "input_value",
-          "name": "SECS",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 2
-          }
+          "name": "SECS"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -127,11 +107,7 @@ Blockly.Blocks['looks_think'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "MESSAGE",
-          "defaultBlock": {
-            "type": "text",
-            "value": "Hello!"
-          }
+          "name": "MESSAGE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -147,19 +123,11 @@ Blockly.Blocks["looks_setFont"] = {
       "args0":[
         {
           "type":"input_value",
-          "name":"font",
-          "defaultBlock": {
-            "type": "text",
-            "value": "Helvetica"
-          }
+          "name":"font"
         },
         {
           "type":"input_value",
-          "name":"size",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 14
-          }
+          "name":"size"
         }
       ],
       "message0":"set font to %1 with font size %2",
@@ -185,10 +153,7 @@ Blockly.Blocks["looks_setColor"] = {
         },
         {
           "type":"input_value",
-          "name":"color",
-          "defaultBlock": {
-            "type": "colour_picker"
-          }
+          "name":"color"
         }
       ],
       "message0":"set %1 color to %2",
@@ -219,11 +184,7 @@ Blockly.Blocks["looks_setShape"] = {
         },
         {
           "type":"input_value",
-          "name":"color",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 0
-          }
+          "name":"color"
         }
       ],
       "message0":"set text bubble %1 to %2",
@@ -304,10 +265,7 @@ Blockly.Blocks['looks_changeVisibilityOfSprite'] = {
         },
         {
           "type": "input_value",
-          "name": "VISIBLE_OPTION",
-          "defaultBlock": {
-            "type": "looks_changeVisibilityOfSprite_menu"
-          }
+          "name": "VISIBLE_OPTION"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -328,10 +286,7 @@ Blockly.Blocks['looks_changeVisibilityOfSpriteShow'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "VISIBLE_OPTION",
-          "defaultBlock": {
-            "type": "looks_changeVisibilityOfSprite_menu"
-          }
+          "name": "VISIBLE_OPTION"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -352,10 +307,7 @@ Blockly.Blocks['looks_changeVisibilityOfSpriteHide'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "VISIBLE_OPTION",
-          "defaultBlock": {
-            "type": "looks_changeVisibilityOfSprite_menu"
-          }
+          "name": "VISIBLE_OPTION"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -387,10 +339,7 @@ Blockly.Blocks["looks_setTintColor"] = {
       "args0":[
         {
           "type":"input_value",
-          "name":"color",
-          "defaultBlock": {
-            "type": "colour_picker"
-          }
+          "name":"color"
         }
       ],
       "message0":"set tint color to %1",
@@ -442,11 +391,7 @@ Blockly.Blocks['looks_changeeffectby'] = {
         },
         {
           "type": "input_value",
-          "name": "CHANGE",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 25
-          }
+          "name": "CHANGE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -484,11 +429,7 @@ Blockly.Blocks['looks_seteffectto'] = {
         },
         {
           "type": "input_value",
-          "name": "VALUE",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 0
-          }
+          "name": "VALUE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -522,11 +463,7 @@ Blockly.Blocks['looks_changesizeby'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "CHANGE",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "CHANGE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -546,11 +483,7 @@ Blockly.Blocks['looks_setsizeto'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "SIZE",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 100
-          }
+          "name": "SIZE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -594,11 +527,7 @@ Blockly.Blocks['looks_changestretchby'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "CHANGE",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 10
-          }
+          "name": "CHANGE"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -620,11 +549,7 @@ Blockly.Blocks['looks_setstretchto'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "STRETCH",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 100
-          }
+          "name": "STRETCH"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -670,10 +595,7 @@ Blockly.Blocks['looks_switchcostumeto'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "COSTUME",
-          "defaultBlock": {
-            "type": "looks_costume"
-          }
+          "name": "COSTUME"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -721,10 +643,7 @@ Blockly.Blocks['looks_switchbackdropto'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "BACKDROP",
-          "defaultBlock": {
-            "type": "looks_backdrops"
-          }
+          "name": "BACKDROP"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -802,11 +721,7 @@ Blockly.Blocks['looks_goforwardbackwardlayers'] = {
         },
         {
           "type": "input_value",
-          "name": "NUM",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 1
-          }
+          "name": "NUM"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -834,11 +749,7 @@ Blockly.Blocks['looks_goTargetLayer'] = {
         },
         {
           "type": "input_value",
-          "name": "VISIBLE_OPTION",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 1
-          }
+          "name": "VISIBLE_OPTION"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -856,11 +767,7 @@ Blockly.Blocks["looks_layersSetLayer"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "NUM",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 1
-          }
+          "name": "NUM"
         }
       ],
       "extensions": [
@@ -946,10 +853,7 @@ Blockly.Blocks['looks_switchbackdroptoandwait'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "BACKDROP",
-          "defaultBlock": {
-            "type": "looks_backdrops"
-          }
+          "name": "BACKDROP"
         }
       ],
       "category": Blockly.Categories.looks,
@@ -994,19 +898,11 @@ Blockly.Blocks["looks_setStretch"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "X",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 100
-          }
+          "name": "X"
         },
         {
           "type": "input_value",
-          "name": "Y",
-          "defaultBlock": {
-            "type": "math_number",
-            "value": 100
-          }
+          "name": "Y"
         }
       ],
       "message0": "set stretch to x: %1 y: %2",
@@ -1091,10 +987,7 @@ Blockly.Blocks["looks_getOtherSpriteVisible"] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "VISIBLE_OPTION",
-          "defaultBlock": {
-            "type": "looks_getOtherSpriteVisible_menu"
-          }
+          "name": "VISIBLE_OPTION"
         }
       ],
       "extensions": [
@@ -1192,17 +1085,11 @@ Blockly.Blocks['looks_getinputofcostume'] = {
       "args0": [
         {
           "type": "input_value",
-          "name": "INPUT",
-          "defaultBlock": {
-            "type": "looks_getinput_menu"
-          }
+          "name": "INPUT"
         },
         {
           "type": "input_value",
-          "name": "COSTUME",
-          "defaultBlock": {
-            "type": "looks_costume"
-          }
+          "name": "COSTUME"
         },
       ],
       "category": Blockly.Categories.looks,
