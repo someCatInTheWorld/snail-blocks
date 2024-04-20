@@ -473,7 +473,7 @@ Blockly.VariableCategory.addBlock = function(xmlList, variable, blockType,
           opt_secondValue[1], opt_secondValue[2]);
     }
 
-    var gap = 8;
+    var gap = 10;
     var blockText = '<xml>' +
         '<block type="' + blockType + '" gap="' + gap + '">' +
         Blockly.Variables.generateVariableFieldXml_(variable, fieldName) +
