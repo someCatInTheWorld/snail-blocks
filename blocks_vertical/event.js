@@ -445,8 +445,16 @@ Blockly.Blocks["event_always"] = {
   init: function() {
     this.jsonInit({
       "inputsInline": true,
-      "message0": "always",
-      "args0": [],
+      "message0": "always %1",
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "always.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "flag"
+        }
+      ],
       "category": Blockly.Categories.event,
       "extensions": ["colours_event", "shape_hat"]
     });
