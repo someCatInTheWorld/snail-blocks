@@ -85,10 +85,15 @@ Blockly.Toolbox = function(workspace) {
 
 };
 
-Blockly.Toolbox.menus_ = {}
+Blockly.Toolbox.menus_ = {};
 Blockly.Toolbox.registerMenu = function(name, options) {
-  Blockly.Toolbox.menus_[name] = options
-}
+  if (Blockly.Toolbox.menus_[name]) {
+    console.warn('registerMenu concats existing options together! if your intent was to override a menu you cant do that via existing functions.')
+    Blockly.Toolbox.menus_[name] = Blockly.Toolbox.menus_[name].concat(options)
+    return;
+  }
+  Blockly.Toolbox.menus_[name] = options;
+};
 
 /**
  * Width of the toolbox, which changes only in vertical layout.
