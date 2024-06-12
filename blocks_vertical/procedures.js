@@ -916,7 +916,7 @@ Blockly.ScratchBlocks.ProcedureUtils.argumentReporterDomToMutation = function(do
     this.color = JSON.parse(dom.getAttribute('color'))
     this.updateDisplay_()
   } catch (err) {
-    console.log('unkown old argument reporter')
+    console.warn('unknown old argument reporter')
   }
 };
 
