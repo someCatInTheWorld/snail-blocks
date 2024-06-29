@@ -133,6 +133,12 @@ Blockly.Block = function(workspace, prototypeName, opt_id) {
    */
   this.checkboxInFlyout_ = false;
 
+  /**
+   * @type {boolean} pm: Determines whether or not this block will duplicate on drag.
+   * @private
+   */
+  this.canDragDuplicate_ = false;
+
   /** @type {string|Blockly.Comment} */
   this.comment = null;
 
@@ -1320,6 +1326,9 @@ Blockly.Block.prototype.jsonInit = function(json) {
   if (json['outputShape'] !== undefined) {
     this.setOutputShape(json['outputShape']);
   }
+  if (json['canDragDuplicate'] !== undefined) {
+    this.setDragDuplication(json['canDragDuplicate']);
+  }
   if (json['checkboxInFlyout'] !== undefined) {
     this.setCheckboxInFlyout(json['checkboxInFlyout']);
   }
@@ -1705,6 +1714,24 @@ Blockly.Block.prototype.setCheckboxInFlyout = function(hasCheckbox) {
  */
 Blockly.Block.prototype.hasCheckboxInFlyout = function() {
   return this.checkboxInFlyout_;
+};
+
+/**
+ * pm: Set whether this block can duplicate on drag.
+ * Note that a block must be a shadow block to duplicate on drag.
+ * @param {boolean} canDragDuplicate True if this block should duplicate on drag.
+ */
+Blockly.Block.prototype.setDragDuplication = function(canDragDuplicate) {
+  this.canDragDuplicate_ = canDragDuplicate;
+};
+
+/**
+ * pm: Get whether this block can duplicate on drag.
+ * This will only return true if the block is also a shadow block.
+ * @return {boolean} True if this block can duplicate on drag.
+ */
+Blockly.Block.prototype.canDragDuplicate = function() {
+  return this.canDragDuplicate_ && this.isShadow();
 };
 
 /**

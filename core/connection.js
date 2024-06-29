@@ -308,10 +308,10 @@ Blockly.Connection.prototype.canConnectWithReason_ = function(target) {
     return Blockly.Connection.REASON_SHADOW_PARENT;
   } else if ((this.targetConnection && 
     this.targetConnection.sourceBlock_ && 
-    Blockly.scratchBlocksUtils.isShadowArgumentReporter(this.targetConnection.sourceBlock_)) || 
+    (Blockly.scratchBlocksUtils.isShadowArgumentReporter(this.targetConnection.sourceBlock_) && this.targetConnection.sourceBlock_.canDragDuplicate())) || 
     (target.targetConnection && 
     target.targetConnection.sourceBlock_ && 
-    Blockly.scratchBlocksUtils.isShadowArgumentReporter(target.targetConnection.sourceBlock_))) {
+    (Blockly.scratchBlocksUtils.isShadowArgumentReporter(target.targetConnection.sourceBlock_) && this.targetConnection.sourceBlock_.canDragDuplicate()))) {
     return Blockly.Connection.REASON_ARGUMENT_GENERATOR
   }
   return Blockly.Connection.CAN_CONNECT;
