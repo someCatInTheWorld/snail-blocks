@@ -86,8 +86,8 @@ Blockly.Toolbox = function(workspace) {
 };
 
 Blockly.Toolbox.menus_ = {};
-Blockly.Toolbox.registerMenu = function(name, options) {
-  if (Blockly.Toolbox.menus_[name]) {
+Blockly.Toolbox.registerMenu = function(name, options, opt_merge) {
+  if (Blockly.Toolbox.menus_[name] && opt_merge) {
     console.warn('registerMenu concats existing options together! if your intent was to override a menu you cant do that via existing functions.')
     Blockly.Toolbox.menus_[name] = Blockly.Toolbox.menus_[name].concat(options)
     return;
@@ -696,15 +696,12 @@ Blockly.Toolbox.Category = function(parent, parentHtml, domTree) {
   if (options) {
     // wrap all the callbacks so they know who is calling
     this.menuOptions_ = []
+    var self = this
     for (var i = 0; i < options.length; i++) {
-      var callback = options[i].callback
-      var self = this
       this.menuOptions_.push({
         text: options[i].text,
         enabled: options[i].enabled,
-        callback: function() {
-          callback(self.id_)
-        }
+        callback: options[i].callback.bind(null, self.id_)
       })
     }
   }
