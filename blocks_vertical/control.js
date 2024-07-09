@@ -508,6 +508,8 @@ Blockly.Blocks['control_for_each'] = {
       "type": "control_for_each",
       "message0": Blockly.Msg.CONTROL_FOREACH,
       "message1": "%1",
+      "message2": "%1",
+      "lastDummyAlign2": "RIGHT",
       "args0": [
         {
           "type": "field_variable",
@@ -523,6 +525,16 @@ Blockly.Blocks['control_for_each'] = {
           "type": "input_statement",
           "check": 'normal',
           "name": "SUBSTACK"
+        }
+      ],
+      "args2": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "repeat.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "*",
+          "flip_rtl": true
         }
       ],
       "category": Blockly.Categories.control,
