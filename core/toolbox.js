@@ -765,7 +765,7 @@ Blockly.Toolbox.Category.prototype.createDom = function() {
     var tbIcon = goog.dom.createDom('img',
         {
           'class': 'tbBubbleIcon',
-          'src': 'https://turbobuilder-steel.vercel.app/favicon.png',
+          'src': 'https://turbobuilder.vercel.app/favicon.png',
           'style': 'display: none;'
         })
     this.bubble_.appendChild(tbIcon)
