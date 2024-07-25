@@ -1062,6 +1062,26 @@ Blockly.Blocks['control_exitLoop'] = {
   }
 };
 
+Blockly.Blocks['control_continueLoop'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'continue loop %1',
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "repeat.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "*",
+          "flip_rtl": true
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_end"]
+    });
+  }
+};
+
 Blockly.Blocks['control_javascript_command'] = {
   /**
    * pm: Block to run javascript code.
