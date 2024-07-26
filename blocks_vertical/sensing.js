@@ -1133,3 +1133,40 @@ Blockly.Blocks['sensing_getxyoftouchingsprite'] = {
     });
   }
 };
+
+
+Blockly.Blocks["sensing_savedata"] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "save data %1 as %2 locally",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "input_value",
+          "name": "NAME"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks["sensing_getdata"] = {
+  init: function() {
+    this.jsonInit({
+      "message0": "get local data from %1",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "NAME"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_string"]
+    });
+  }
+};
