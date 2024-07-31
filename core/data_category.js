@@ -104,6 +104,8 @@ Blockly.VariableCategory.ListCategory = function(workspace) {
     Blockly.VariableCategory.addSep(xmlList);
     Blockly.VariableCategory.addDeleteOfList(xmlList, firstList);
     Blockly.VariableCategory.addDeleteAllOfList(xmlList, firstList);
+    Blockly.VariableCategory.addBlock(xmlList, firstList, 'data_shiftlist', 'LIST',
+      ['INDEX', 'math_integer', 1]);
     Blockly.VariableCategory.addInsertAtList(xmlList, firstList);
     Blockly.VariableCategory.addReplaceItemOfList(xmlList, firstList);
     Blockly.VariableCategory.addBlock(xmlList, firstList, 'data_listforeachitem', 'LIST');
