@@ -602,6 +602,27 @@ Blockly.Blocks['data_listarray'] = {
   }
 };
 
+Blockly.Blocks['data_amountinlist'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'amount of %1 in %2',
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "output_number"]
+    });
+  }
+};
+
 Blockly.Blocks['data_arraylist'] = {
   init: function() {
     this.jsonInit({
