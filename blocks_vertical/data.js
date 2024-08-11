@@ -659,7 +659,7 @@ Blockly.Blocks['data_filterlist'] = {
         },
         {
           "type": "input_value",
-          "name": "ITEM"
+          "name": "INDEX"
         },
         {
           "type": "input_value",
