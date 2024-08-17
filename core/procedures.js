@@ -244,6 +244,13 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
   '</xml>'
   var blockText = 
   '<xml>' + 
+    '<block type="procedures_set">' + 
+      '<value name="VALUE">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">value</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
     '<block type="procedures_return">' + 
       '<value name="return">' +
         '<shadow type="text">' +
