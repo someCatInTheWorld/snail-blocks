@@ -1199,7 +1199,7 @@ Blockly.Blocks['procedures_set'] = {
           "name": "VALUE"
         }
       ],
-      "extensions": ["colours_more"]
+      "extensions": ["colours_more", "shape_statement"]
     });
   }
 };
