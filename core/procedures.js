@@ -254,7 +254,7 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
     '</block>' +
   '</xml>';
   var block = Blockly.Xml.textToDom(blockText).firstChild;
-  var gap = Blockly.Xml.textToDom(gapText).firstChild
+  var gap = Blockly.Xml.textToDom(gapText).firstChild;
   xmlList.push(gap); xmlList.push(block);
   blockText = 
   '<xml>' +
@@ -267,8 +267,7 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
     '</block>' +
   '</xml>';
   block = Blockly.Xml.textToDom(blockText).firstChild;
-  gap = Blockly.Xml.textToDom(gapText).firstChild
-  xmlList.push(gap); xmlList.push(block);
+  xmlList.push(block);
   return xmlList;
 };
 
