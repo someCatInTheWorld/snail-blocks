@@ -252,20 +252,23 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<next>' +
-      '<block type="procedures_return">' + 
-        '<value name="return">' +
-          '<shadow type="text">' +
-            '<field name="TEXT">1</field>' +
-          '</shadow>' +
-        '</value>' +
-      '</block>' + 
-    '</next>' +
   '</xml>';
   var block = Blockly.Xml.textToDom(blockText).firstChild;
   var gap = Blockly.Xml.textToDom(gapText).firstChild
-  xmlList.push(gap);
-  xmlList.push(block);
+  xmlList.push(gap); xmlList.push(block);
+  blockText = 
+  '<xml>' +
+    '<block type="procedures_return">' + 
+      '<value name="return">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">1</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+  '</xml>';
+  block = Blockly.Xml.textToDom(blockText).firstChild;
+  gap = Blockly.Xml.textToDom(gapText).firstChild
+  xmlList.push(gap); xmlList.push(block);
   return xmlList;
 };
 
