@@ -245,9 +245,7 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
   var blockText = 
   '<xml>' + 
     '<block type="procedures_set">' + 
-      '<value name="PARAM">' +
-        '<shadow type="null"></shadow>' +
-      '</value>' +
+      '<value name="PARAM"></value>' +
       '<value name="VALUE">' +
         '<shadow type="text">' +
           '<field name="TEXT">value</field>' +
@@ -441,9 +439,7 @@ Blockly.Procedures.createProcedureCallbackFactory_ = function(workspace) {
       var returnBlockText = 
       '<next>' +
         '<block type="procedures_set">' + 
-          '<value name="PARAM">' +
-            '<shadow type="null"></shadow>' +
-          '</value>' +
+          '<value name="PARAM"></value>' +
           '<value name="VALUE">' +
             '<shadow type="text">' +
               '<field name="TEXT">value</field>' +
