@@ -1189,7 +1189,6 @@ Blockly.Blocks['procedures_set'] = {
   init: function() {
     this.jsonInit({
       "message0": 'set %1 to %2',
-      "message1": "%1",
       "args0": [
         {
           "type": "input_value",
