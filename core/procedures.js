@@ -254,13 +254,15 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
         '</shadow>' +
       '</value>' +
     '</block>' +
-    '<block type="procedures_return">' + 
-      '<value name="return">' +
-        '<shadow type="text">' +
-          '<field name="TEXT">1</field>' +
-        '</shadow>' +
-      '</value>' +
-    '</block>' + 
+    '<next>' +
+      '<block type="procedures_return">' + 
+        '<value name="return">' +
+          '<shadow type="text">' +
+            '<field name="TEXT">1</field>' +
+          '</shadow>' +
+        '</value>' +
+      '</block>' + 
+    '</next>' +
   '</xml>';
   var block = Blockly.Xml.textToDom(blockText).firstChild;
   var gap = Blockly.Xml.textToDom(gapText).firstChild
