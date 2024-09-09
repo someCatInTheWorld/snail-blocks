@@ -1011,7 +1011,8 @@ Blockly.Blocks['procedures_prototype'] = {
    */
   init: function() {
     this.jsonInit({
-      "extensions": ["colours_more", 'shape_procedure']
+      "extensions": ["colours_more", 'shape_procedure'],
+      "outputShape": Blockly.OUTPUT_SHAPE_SQUARE,
     });
 
     /* Data known about the procedure. */
