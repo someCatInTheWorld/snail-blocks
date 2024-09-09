@@ -1206,9 +1206,13 @@ Blockly.Blocks['argument_reporter_command'] = {
           "text": ""
         }
       ],
+      "canDragDuplicate": true,
       "extensions": ["colours_more", "shape_statement"],
     });
   },
+  updateDisplay_: Blockly.ScratchBlocks.ProcedureUtils.argumentReporterUpdateDisplay,
+  mutationToDom: Blockly.ScratchBlocks.ProcedureUtils.argumentReporterMutationToDom,
+  domToMutation: Blockly.ScratchBlocks.ProcedureUtils.argumentReporterDomToMutation
 };
 
 Blockly.Blocks['argument_editor_boolean'] = {
@@ -1261,6 +1265,9 @@ Blockly.Blocks['argument_editor_command'] = {
           "text": "foo"
         }
       ],
+      "colour": Blockly.Colours.textField,
+      "colourSecondary": Blockly.Colours.textField,
+      "colourTertiary": Blockly.Colours.textField,
       "extensions": ["colours_more", "shape_statement"],
     });
   },
