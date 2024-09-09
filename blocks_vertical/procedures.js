@@ -510,8 +510,12 @@ Blockly.ScratchBlocks.ProcedureUtils.populateArgumentOnCaller_ = function(type,
   if (connectionMap && oldBlock) {
     // Reattach the old block and shadow DOM.
     connectionMap[input.name] = null;
-    oldBlock.outputConnection.connect(input.connection);
-    if (type != 'b' && this.generateShadows_) {
+    if (type == "c") {
+      oldBlock.previousConnection.connect(input.connection);
+    } else {
+      oldBlock.outputConnection.connect(input.connection);
+    }
+    if (type != 'b' && type != 'c' && this.generateShadows_) {
       var shadowDom = oldShadow || this.buildShadowDom_(type);
       console.log("setting shadow dom: " + shadowDom);
       input.connection.setShadowDom(shadowDom);
@@ -558,7 +562,11 @@ Blockly.ScratchBlocks.ProcedureUtils.populateArgumentOnPrototype_ = function(
   }
 
   // Attach the block.
-  input.connection.connect(argumentReporter.outputConnection);
+  if (type == "c") {
+    input.connection.connect(argumentReporter.previousConnection);
+  } else {
+    input.connection.connect(argumentReporter.outputConnection);
+  }
 };
 
 /**
@@ -600,7 +608,11 @@ Blockly.ScratchBlocks.ProcedureUtils.populateArgumentOnDeclaration_ = function(
   }
 
   // Attach the block.
-  input.connection.connect(argumentEditor.outputConnection);
+  if (type == "c") {
+    input.connection.connect(argumentEditor.previousConnection);
+  } else {
+    input.connection.connect(argumentEditor.outputConnection);
+  }
 };
 
 /**
