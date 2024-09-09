@@ -752,6 +752,16 @@ Blockly.ScratchBlocks.ProcedureUtils.addBooleanExternal = function() {
   this.focusLastEditor_();
 };
 
+Blockly.ScratchBlocks.ProcedureUtils.addCommandExternal = function () {
+  Blockly.WidgetDiv.hide(true);
+  this.procCode_ = this.procCode_ + " %c";
+  this.displayNames_.push("branch");
+  this.argumentIds_.push("SUBSTACK" + Blockly.utils.genUid());
+  this.argumentDefaults_.push("");
+  this.updateDisplay_();
+  this.focusLastEditor_();
+};
+
 /**
  * Externally-visible function to add a string/number argument to the procedure
  * declaration.
@@ -1127,6 +1137,7 @@ Blockly.Blocks['procedures_declaration'] = {
   removeColor: Blockly.ScratchBlocks.ProcedureUtils.removeColor,
   addLabelExternal: Blockly.ScratchBlocks.ProcedureUtils.addLabelExternal,
   addBooleanExternal: Blockly.ScratchBlocks.ProcedureUtils.addBooleanExternal,
+  addCommandExternal: Blockly.ScratchBlocks.ProcedureUtils.addCommandExternal,
   addStringNumberExternal: Blockly.ScratchBlocks.ProcedureUtils.addStringNumberExternal,
   onChangeFn: Blockly.ScratchBlocks.ProcedureUtils.updateDeclarationProcCode_
 };
