@@ -307,7 +307,7 @@ Blockly.ScratchBlocks.ProcedureUtils.createAllInputs_ = function(connectionMap) 
     var argumentType = component.substring(1, 2);
     var id = this.argumentIds_[argumentCount];
     // user error shouldnt literally nuke the app, ignore invalid markers instead of erroring on them
-    if (component.substring(0, 1) == '%' && (argumentType == 'n' || argumentType == 'b' || argumentType == 's') && id) {
+    if (component.substring(0, 1) == '%' && (['n', 's', 'b', 'c'].includes(argumentType)) && id) {
       /*
       if (!(argumentType == 'n' || argumentType == 'b' || argumentType == 's')) {
         throw new Error(
