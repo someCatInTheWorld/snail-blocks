@@ -192,10 +192,9 @@ Blockly.ScratchBlocks.ProcedureUtils.updateDisplay_ = function() {
     this.setNextStatement(false)
     switch (ConectionType) {
       case 'string':
-        this.setOutputShape(Blockly.OUTPUT_SHAPE_SQUARE);
+        this.setOutputShape(Blockly.OUTPUT_SHAPE_ROUND);
         this.setOutput(this.output_, this.isDisplayOnly ? 'procedure' : 'String')
         break
-      //dont believe these two get used?
       case 'number':
         this.setOutputShape(Blockly.OUTPUT_SHAPE_ROUND);
         this.setOutput(this.output_, this.isDisplayOnly ? 'procedure' : 'Number')
@@ -1012,7 +1011,7 @@ Blockly.Blocks['procedures_prototype'] = {
    */
   init: function() {
     this.jsonInit({
-      "extensions": ["colours_more", 'shape_procedure'],
+      "extensions": ["colours_more", 'shape_procedure']
     });
 
     /* Data known about the procedure. */
