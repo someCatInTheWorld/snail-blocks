@@ -702,7 +702,7 @@ Blockly.ScratchBlocks.ProcedureUtils.updateDeclarationProcCode_ = function() {
     var input = this.inputList[i];
     if (input.type == Blockly.DUMMY_INPUT) {
       this.procCode_ += input.fieldRow[0].getValue();
-    } else if (input.type == Blockly.INPUT_VALUE) {
+    } else if (input.type == Blockly.INPUT_VALUE || input.type == Blockly.NEXT_STATEMENT) {
       // Inspect the argument editor.
       var target = input.connection.targetBlock();
       this.displayNames_.push(target.getFieldValue('TEXT'));
