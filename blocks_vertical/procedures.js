@@ -691,11 +691,6 @@ Blockly.ScratchBlocks.ProcedureUtils.updateDeclarationProcCode_ = function() {
       var target = input.connection.targetBlock();
       this.displayNames_.push(target.getFieldValue('TEXT'));
       this.argumentIds_.push(input.name);
-      if (target.type == 'argument_editor_boolean') {
-        this.procCode_ += '%b';
-      } else {
-        this.procCode_ += '%s';
-      }
       switch (target.type) {
         case 'argument_editor_string_number':
           this.procCode_ += '%s';
