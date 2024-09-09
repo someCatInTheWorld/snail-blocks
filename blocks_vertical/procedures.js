@@ -1179,7 +1179,7 @@ Blockly.Blocks['argument_reporter_command'] = {
           "text": ""
         }
       ],
-      "extensions": ["colours_argument", "shape_statement"],
+      "extensions": ["colours_more", "shape_statement"],
     });
   },
 };
@@ -1234,7 +1234,7 @@ Blockly.Blocks['argument_editor_command'] = {
           "text": "foo"
         }
       ],
-      "extensions": ["colours_argument", "shape_statement"],
+      "extensions": ["colours_more", "shape_statement"],
     });
   },
   // Exist on declaration and arguments editors, with different implementations.
