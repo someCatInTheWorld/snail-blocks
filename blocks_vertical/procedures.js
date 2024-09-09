@@ -316,7 +316,11 @@ Blockly.ScratchBlocks.ProcedureUtils.createAllInputs_ = function(connectionMap) 
       */
       labelText = component.substring(2).trim();
 
-      var input = this.appendValueInput(id);
+      if (argumentType == "c") {
+        var input = this.appendStatementInput(id)
+      } else {
+        var input = this.appendValueInput(id);
+      }
       if (argumentType == 'b') {
         input.setCheck('Boolean');
       }
