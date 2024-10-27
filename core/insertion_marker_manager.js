@@ -639,6 +639,7 @@ Blockly.InsertionMarkerManager.prototype.disconnectMarker_ = function() {
   }
 
   if (imConn.targetConnection) {
+    imConn.targetConnection.sourceBlock_.unplug()
     //throw 'markerConnection_ still connected at the end of disconnectInsertionMarker';
   }
 
