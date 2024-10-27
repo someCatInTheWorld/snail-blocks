@@ -48,6 +48,30 @@ Blockly.Blocks['sensing_touchingobject'] = {
   }
 };
 
+Blockly.Blocks['sensing_objecttouchingclonesprite'] = {
+  /**
+   * pm: Block to Report if an Object is touching a clone of another sprite.
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": "%1 touching clone of %2?",
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "FULLTOUCHINGOBJECTMENU"
+        },
+        {
+          "type": "input_value",
+          "name": "SPRITETOUCHINGOBJECTMENU"
+        }
+      ],
+      "category": Blockly.Categories.sensing,
+      "extensions": ["colours_sensing", "output_boolean"]
+    });
+  }
+};
+
 Blockly.Blocks['sensing_objecttouchingobject'] = {
   /**
    * pm" Block to Report if an Object is touching another Object.
