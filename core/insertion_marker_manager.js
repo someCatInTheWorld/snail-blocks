@@ -638,7 +638,7 @@ Blockly.InsertionMarkerManager.prototype.disconnectMarker_ = function() {
   }
 
   if (imConn.targetConnection) {
-    imConn.disconnect()
+    imConn.targetConnection.disconnect()
     //throw 'markerConnection_ still connected at the end of disconnectInsertionMarker';
   }
 
