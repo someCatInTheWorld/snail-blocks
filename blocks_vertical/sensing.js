@@ -642,6 +642,7 @@ Blockly.Blocks['sensing_getdragmode'] = {
     this.jsonInit({
       "message0": "draggable?",
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_boolean"]
     });
   }
