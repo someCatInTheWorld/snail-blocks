@@ -443,6 +443,7 @@ Blockly.Blocks['sensing_mousedown'] = {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_MOUSEDOWN,
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_boolean"]
     });
   }
@@ -457,6 +458,7 @@ Blockly.Blocks['sensing_mouseclicked'] = {
     this.jsonInit({
       "message0": "mouse clicked?",
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_boolean"]
     });
   }
@@ -511,6 +513,7 @@ Blockly.Blocks['sensing_mousex'] = {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_MOUSEX,
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
     });
   }
@@ -525,6 +528,7 @@ Blockly.Blocks['sensing_mousey'] = {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_MOUSEY,
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
     });
   }
@@ -599,6 +603,7 @@ Blockly.Blocks['sensing_getclipboard'] = {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_CLIPBOARDITEM,
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_string"]
     });
   }
@@ -668,6 +673,7 @@ Blockly.Blocks['sensing_loud'] = {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_LOUD,
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_boolean"]
     });
   }
@@ -804,6 +810,7 @@ Blockly.Blocks['sensing_dayssince2000'] = {
     this.jsonInit({
       "message0": Blockly.Msg.SENSING_DAYSSINCE2000,
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_number"]
     });
   }
@@ -826,13 +833,14 @@ Blockly.Blocks['sensing_username'] = {
 
 Blockly.Blocks['sensing_loggedin'] = {
   /**
-   * Block to report user's username
+   * pm: Block to report if a user is logged in.
    * @this Blockly.Block
    */
   init: function () {
     this.jsonInit({
       "message0": 'logged in?',
       "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
       "extensions": ["colours_sensing", "output_boolean"]
     });
   }
