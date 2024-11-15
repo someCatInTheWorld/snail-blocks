@@ -494,28 +494,40 @@ Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
     1: 2 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in hexagon.
     2: 5 * Blockly.BlockSvg.GRID_UNIT, // Round in hexagon.
     3: 5 * Blockly.BlockSvg.GRID_UNIT, // Square in hexagon.
-    4: 5 * Blockly.BlockSvg.GRID_UNIT // Leaf in hexagon.
+    4: 5 * Blockly.BlockSvg.GRID_UNIT, // Leaf in hexagon.
+    5: 4 * Blockly.BlockSvg.GRID_UNIT // Plus in hexagon.
   },
   2: { // Outer shape: round.
     0: 3 * Blockly.BlockSvg.GRID_UNIT, // Field in round.
     1: 3 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in round.
     2: 1 * Blockly.BlockSvg.GRID_UNIT, // Round in round.
     3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in round.
-    4: 2 * Blockly.BlockSvg.GRID_UNIT // Leaf in round.
+    4: 2 * Blockly.BlockSvg.GRID_UNIT, // Leaf in round.
+    5: 2 * Blockly.BlockSvg.GRID_UNIT // Plus in round.
   },
   3: { // Outer shape: square.
     0: 2 * Blockly.BlockSvg.GRID_UNIT, // Field in square.
     1: 2 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in square.
     2: 2 * Blockly.BlockSvg.GRID_UNIT, // Round in square.
     3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in square.
-    4: 2 * Blockly.BlockSvg.GRID_UNIT // Leaf in square.
+    4: 2 * Blockly.BlockSvg.GRID_UNIT, // Leaf in square.
+    5: 2 * Blockly.BlockSvg.GRID_UNIT // Plus in square.
   },
   4: { // Outer shape: leaf.
     0: 3 * Blockly.BlockSvg.GRID_UNIT, // Field in leaf.
     1: 3 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in leaf.
     2: 2 * Blockly.BlockSvg.GRID_UNIT, // Round in leaf.
     3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in leaf.
-    4: 1 * Blockly.BlockSvg.GRID_UNIT // Leaf in leaf.
+    4: 1 * Blockly.BlockSvg.GRID_UNIT, // Leaf in leaf.
+    5: 2 * Blockly.BlockSvg.GRID_UNIT // Plus in leaf.
+  },
+  5: { // Outer shape: plus.
+    0: 5 * Blockly.BlockSvg.GRID_UNIT, // Field in plus.
+    1: 4 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in plus.
+    2: 4 * Blockly.BlockSvg.GRID_UNIT, // Round in plus.
+    3: 5 * Blockly.BlockSvg.GRID_UNIT, // Square in plus.
+    4: 5 * Blockly.BlockSvg.GRID_UNIT, // Leaf in plus.
+    4: 3 * Blockly.BlockSvg.GRID_UNIT // Plus in plus.
   }
 };
 
