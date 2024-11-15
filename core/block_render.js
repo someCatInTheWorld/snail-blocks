@@ -1570,7 +1570,7 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps) {
     } else if (this.edgeShape_ === Blockly.OUTPUT_SHAPE_PLUS) {
       // Draw a half-plus.
       let unit = 6
-      let remainingHeight = this.edgeShapeWidth_ - unit * 6
+      let remainingHeight = this.edgeShapeWidth_ * 2 - unit * 6
       steps.push(
         `a ${unit} ${unit} 0 0 1 -${unit} -${unit} ` +
         `a ${unit} ${unit} 0 0 0 -${unit} -${unit} ` +
@@ -1614,7 +1614,7 @@ Blockly.BlockSvg.prototype.drawEdgeShapeRight_ = function(steps) {
     } else if (this.edgeShape_ === Blockly.OUTPUT_SHAPE_PLUS) {
       // Draw a half-plus.
       let unit = 6
-      let remainingHeight = this.edgeShapeWidth_ - unit * 6
+      let remainingHeight = this.edgeShapeWidth_ * 2 - unit * 6
       steps.push(
         `a ${unit} ${unit} 0 0 1 ${unit} ${unit} ` +
         `a ${unit} ${unit} 0 0 0 ${unit} ${unit} ` +
