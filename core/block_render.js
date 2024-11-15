@@ -470,19 +470,29 @@ Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
     0: 5 * Blockly.BlockSvg.GRID_UNIT, // Field in hexagon.
     1: 2 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in hexagon.
     2: 5 * Blockly.BlockSvg.GRID_UNIT, // Round in hexagon.
-    3: 5 * Blockly.BlockSvg.GRID_UNIT // Square in hexagon.
+    3: 5 * Blockly.BlockSvg.GRID_UNIT, // Square in hexagon.
+    4: 5 * Blockly.BlockSvg.GRID_UNIT // Leaf in hexagon.
   },
   2: { // Outer shape: round.
     0: 3 * Blockly.BlockSvg.GRID_UNIT, // Field in round.
     1: 3 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in round.
     2: 1 * Blockly.BlockSvg.GRID_UNIT, // Round in round.
-    3: 2 * Blockly.BlockSvg.GRID_UNIT // Square in round.
+    3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in round.
+    4: 2 * Blockly.BlockSvg.GRID_UNIT // Leaf in round.
   },
   3: { // Outer shape: square.
     0: 2 * Blockly.BlockSvg.GRID_UNIT, // Field in square.
     1: 2 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in square.
     2: 2 * Blockly.BlockSvg.GRID_UNIT, // Round in square.
-    3: 2 * Blockly.BlockSvg.GRID_UNIT // Square in square.
+    3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in square.
+    4: 2 * Blockly.BlockSvg.GRID_UNIT // Leaf in square.
+  },
+  4: { // Outer shape: leaf.
+    0: 3 * Blockly.BlockSvg.GRID_UNIT, // Field in leaf.
+    1: 3 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in leaf.
+    2: 2 * Blockly.BlockSvg.GRID_UNIT, // Round in leaf.
+    3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in leaf.
+    4: 1 * Blockly.BlockSvg.GRID_UNIT // Leaf in leaf.
   }
 };
 
