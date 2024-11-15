@@ -1528,7 +1528,7 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps) {
         `a ${this.edgeShapeWidth_} ${this.edgeShapeWidth_} 0 0 0 ${this.edgeShapeWidth_} -${this.edgeShapeWidth_} ` +
         `l 0 -${this.edgeShapeWidth_ * 0.6} ` +
         `a ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4} 0 0 0 -${this.edgeShapeWidth_ * 0.4} -${this.edgeShapeWidth_ * 0.4} ` +
-        `l -${this.edgeShapeWidth_ * 0.6} 0`
+        `l ${this.edgeShapeWidth_ * 0.6} 0`
       );
     }
   }
@@ -1558,7 +1558,7 @@ Blockly.BlockSvg.prototype.drawEdgeShapeRight_ = function(steps) {
         `a ${this.edgeShapeWidth_} ${this.edgeShapeWidth_} 0 0 0 -${this.edgeShapeWidth_} ${this.edgeShapeWidth_} ` +
         `l 0 ${this.edgeShapeWidth_ * 0.6} ` +
         `a ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4} 0 0 0 ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4} ` +
-        `l ${this.edgeShapeWidth_ * 0.6} 0`
+        `l -${this.edgeShapeWidth_ * 0.6} 0`
       );
     }
   }
