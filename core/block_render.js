@@ -1525,9 +1525,9 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps) {
     } else if (this.edgeShape_ === Blockly.OUTPUT_SHAPE_LEAF) {
       // Draw a half-leaf.
       steps.push(
-        `a ${this.edgeShapeWidth_} ${this.edgeShapeWidth_} a 1 1 0 0 0 -${this.edgeShapeWidth_} ${this.edgeShapeWidth_}` +
+        `a ${this.edgeShapeWidth_} ${this.edgeShapeWidth_} 0 0 0 -${this.edgeShapeWidth_} ${this.edgeShapeWidth_}` +
         `l 0 ${this.edgeShapeWidth_ * 0.6}` +
-        `a ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4} a 1 1 0 0 0 ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4}` +
+        `a ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4} 0 0 0 ${this.edgeShapeWidth_ * 0.4} ${this.edgeShapeWidth_ * 0.4}` +
         `l ${this.edgeShapeWidth_ * 0.6} 0`
       );
     }
