@@ -259,17 +259,16 @@ Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER =
  * SVG path for an empty leaf input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_LEAF = `
-    M ${4 * Blockly.BlockSvg.GRID_UNIT} 0
-    a ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT}
-    l 0 ${2.4 * Blockly.BlockSvg.GRID_UNIT}
-    a ${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT}
-    h ${4 * Blockly.BlockSvg.GRID_UNIT}
-    a ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${4 * Blockly.BlockSvg.GRID_UNIT} -${4 * Blockly.BlockSvg.GRID_UNIT}
-    l 0 -${2.4 * Blockly.BlockSvg.GRID_UNIT}
-    a ${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 ${1.6 * Blockly.BlockSvg.GRID_UNIT} -${1.6 * Blockly.BlockSvg.GRID_UNIT}
-    z
-`
+Blockly.BlockSvg.INPUT_SHAPE_LEAF = 
+  `M ${4 * Blockly.BlockSvg.GRID_UNIT} 0 ` +
+  `a ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `l 0 ${2.4 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `a ${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `h ${4 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `a ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${4 * Blockly.BlockSvg.GRID_UNIT} -${4 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `l 0 -${2.4 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `a ${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 ${1.6 * Blockly.BlockSvg.GRID_UNIT} -${1.6 * Blockly.BlockSvg.GRID_UNIT} ` +
+  `z`
 
 /**
  * Width of empty plus input shape.
@@ -1572,17 +1571,17 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps) {
       // Draw a half-plus.
       let unit = 6
       let remainingHeight = this.edgeShapeWidth_ - unit * 6
-      steps.push(`
-        a ${unit} ${unit} 0 0 1 -${unit} -${unit}
-        a ${unit} ${unit} 0 0 0 -${unit} -${unit}
-        l -2 0
-        a ${unit} ${unit} 0 0 1 -${unit} -${unit}
-        l 0 -${remainingHeight}
-        a ${unit} ${unit} 0 0 1 ${unit} -${unit}
-        l 2 0
-        a ${unit} ${unit} 0 0 0 ${unit} -${unit}
-        a ${unit} ${unit} 0 0 1 ${unit} -${unit}
-      `)
+      steps.push(
+        `a ${unit} ${unit} 0 0 1 -${unit} -${unit} ` +
+        `a ${unit} ${unit} 0 0 0 -${unit} -${unit} ` +
+        `l -2 0 ` +
+        `a ${unit} ${unit} 0 0 1 -${unit} -${unit} ` +
+        `l 0 -${remainingHeight} ` +
+        `a ${unit} ${unit} 0 0 1 ${unit} -${unit} ` +
+        `l 2 0 ` +
+        `a ${unit} ${unit} 0 0 0 ${unit} -${unit} ` +
+        `a ${unit} ${unit} 0 0 1 ${unit} -${unit}`
+      )
     }
   }
   steps.push('z');
@@ -1616,17 +1615,17 @@ Blockly.BlockSvg.prototype.drawEdgeShapeRight_ = function(steps) {
       // Draw a half-plus.
       let unit = 6
       let remainingHeight = this.edgeShapeWidth_ - unit * 6
-      steps.push(`
-        a ${unit} ${unit} 0 0 1 ${unit} ${unit}
-        a ${unit} ${unit} 0 0 0 ${unit} ${unit}
-        l 2 0
-        a ${unit} ${unit} 0 0 1 ${unit} ${unit}
-        l 0 ${remainingHeight}
-        a ${unit} ${unit} 0 0 1 -${unit} ${unit}
-        l -2 0
-        a ${unit} ${unit} 0 0 0 -${unit} ${unit}
-        a ${unit} ${unit} 0 0 1 -${unit} ${unit}
-      `)
+      steps.push(
+        `a ${unit} ${unit} 0 0 1 ${unit} ${unit} ` +
+        `a ${unit} ${unit} 0 0 0 ${unit} ${unit} ` +
+        `l 2 0 ` +
+        `a ${unit} ${unit} 0 0 1 ${unit} ${unit} ` +
+        `l 0 ${remainingHeight} ` +
+        `a ${unit} ${unit} 0 0 1 -${unit} ${unit} ` +
+        `l -2 0 ` +
+        `a ${unit} ${unit} 0 0 0 -${unit} ${unit} ` +
+        `a ${unit} ${unit} 0 0 1 -${unit} ${unit}`
+      )
     }
   }
 };
