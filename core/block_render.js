@@ -527,7 +527,7 @@ Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
     2: 4 * Blockly.BlockSvg.GRID_UNIT, // Round in plus.
     3: 5 * Blockly.BlockSvg.GRID_UNIT, // Square in plus.
     4: 5 * Blockly.BlockSvg.GRID_UNIT, // Leaf in plus.
-    4: 3 * Blockly.BlockSvg.GRID_UNIT // Plus in plus.
+    5: 3 * Blockly.BlockSvg.GRID_UNIT // Plus in plus.
   }
 };
 
