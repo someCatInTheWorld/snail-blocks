@@ -494,14 +494,14 @@ Blockly.BlockSvg.SHAPE_IN_SHAPE_PADDING = {
     2: 5 * Blockly.BlockSvg.GRID_UNIT, // Round in hexagon.
     3: 5 * Blockly.BlockSvg.GRID_UNIT, // Square in hexagon.
     4: 5 * Blockly.BlockSvg.GRID_UNIT, // Leaf in hexagon.
-    5: 4 * Blockly.BlockSvg.GRID_UNIT // Plus in hexagon.
+    5: 3 * Blockly.BlockSvg.GRID_UNIT // Plus in hexagon.
   },
   2: { // Outer shape: round.
     0: 3 * Blockly.BlockSvg.GRID_UNIT, // Field in round.
     1: 3 * Blockly.BlockSvg.GRID_UNIT, // Hexagon in round.
     2: 1 * Blockly.BlockSvg.GRID_UNIT, // Round in round.
-    3: 2 * Blockly.BlockSvg.GRID_UNIT, // Square in round.
-    4: 2 * Blockly.BlockSvg.GRID_UNIT, // Leaf in round.
+    3: 3 * Blockly.BlockSvg.GRID_UNIT, // Square in round.
+    4: 3 * Blockly.BlockSvg.GRID_UNIT, // Leaf in round.
     5: 2 * Blockly.BlockSvg.GRID_UNIT // Plus in round.
   },
   3: { // Outer shape: square.
