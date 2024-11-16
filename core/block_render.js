@@ -295,7 +295,7 @@ Blockly.BlockSvg.INPUT_SHAPE_PLUS =
   a ${Blockly.BlockSvg.GRID_UNIT} ${Blockly.BlockSvg.GRID_UNIT} 0 0 0 -${Blockly.BlockSvg.GRID_UNIT} ${Blockly.BlockSvg.GRID_UNIT}
   l 0 2
   a ${Blockly.BlockSvg.GRID_UNIT} ${Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${Blockly.BlockSvg.GRID_UNIT} ${Blockly.BlockSvg.GRID_UNIT}
-  h -${6 * BlocklySvg.GRID_UNIT}
+  h -${6 * Blockly.BlockSvg.GRID_UNIT}
   a ${Blockly.BlockSvg.GRID_UNIT} ${Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${Blockly.BlockSvg.GRID_UNIT} -${Blockly.BlockSvg.GRID_UNIT}
   l 0 -2
   a ${Blockly.BlockSvg.GRID_UNIT} ${Blockly.BlockSvg.GRID_UNIT} 0 0 0 -${Blockly.BlockSvg.GRID_UNIT} -${Blockly.BlockSvg.GRID_UNIT}
