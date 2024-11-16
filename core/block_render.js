@@ -261,7 +261,7 @@ Blockly.BlockSvg.INNER_BOTTOM_LEFT_CORNER =
  */
 Blockly.BlockSvg.INPUT_SHAPE_LEAF = 
   `
-  M ${4 * Blockly.BlockSvg.GRID_UNIT} 0
+  M ${6 * Blockly.BlockSvg.GRID_UNIT} 0
   a ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 ${4 * Blockly.BlockSvg.GRID_UNIT} ${4 * Blockly.BlockSvg.GRID_UNIT}
   l 0 ${2.4 * Blockly.BlockSvg.GRID_UNIT}
   a ${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT} 0 0 1 -${1.6 * Blockly.BlockSvg.GRID_UNIT} ${1.6 * Blockly.BlockSvg.GRID_UNIT}
@@ -1573,7 +1573,7 @@ Blockly.BlockSvg.prototype.renderDrawLeft_ = function(steps) {
       // Draw a half-plus.
       let unit = 6
       let remainingHeight = this.edgeShapeWidth_ * 2 - 36
-      let remainingWidth = this.edgeShapeWidth_ - 40
+      let remainingWidth = this.edgeShapeWidth_ * 2 - 40
       steps.push(
         `l -${remainingWidth} 0 ` +
         `a ${unit} ${unit} 0 0 1 -${unit} -${unit} ` +
@@ -1620,7 +1620,7 @@ Blockly.BlockSvg.prototype.drawEdgeShapeRight_ = function(steps) {
       // Draw a half-plus.
       let unit = 6
       let remainingHeight = this.edgeShapeWidth_ * 2 - 36
-      let remainingWidth = this.edgeShapeWidth_ - 40
+      let remainingWidth = this.edgeShapeWidth_ * 2 - 40
       steps.push(
         `l ${remainingWidth} 0 ` +
         `a ${unit} ${unit} 0 0 1 ${unit} ${unit} ` +
