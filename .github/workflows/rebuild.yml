@@ -44,6 +44,7 @@ jobs:
       - name: Clear out things
         run: |
           git rm -r -f ./**/*
+          git commit -m "Clean up"
           
       - name: Download built-dist
         uses: actions/download-artifact@v3.0.1
