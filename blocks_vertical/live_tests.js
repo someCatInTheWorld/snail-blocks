@@ -254,6 +254,53 @@ Blockly.Blocks['control_fieldcheckboxoriginal'] = {
   }
 };
 
+Blockly.Blocks['control_testcolorfieldoriginal'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": 'color %1',
+      "args0": [
+        {
+          "type": "field_colour",
+          "colour": "#ff0000",
+          "name": "COLOR"
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['control_blockduplicatesondrag'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": 'duplicate',
+      "category": Blockly.Categories.control,
+      "canDragDuplicate": true,
+      "extensions": ["colours_control", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['control_dualblock'] = {
+  /**
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": 'dual block',
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_statement", "output_string"]
+    });
+  }
+};
+
 Blockly.Blocks['operators_expandablejoininputs'] = {
   /**
    * @this Blockly.Block

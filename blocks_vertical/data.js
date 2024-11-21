@@ -301,6 +301,31 @@ Blockly.Blocks['data_deletealloflist'] = {
   }
 };
 
+Blockly.Blocks['data_shiftlist'] = {
+  /**
+   * Block to delete all items from list.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "shift %1 by %2",
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        },
+        {
+          "type": "input_value",
+          "name": "INDEX"
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['data_insertatlist'] = {
   /**
    * Block to insert item to list.
@@ -573,6 +598,81 @@ Blockly.Blocks['data_listarray'] = {
       ],
       "category": Blockly.Categories.dataLists,
       "extensions": ["colours_data_lists", "output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['data_amountinlist'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'amount of %1 in %2',
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "VALUE"
+        },
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['data_filterlistitem'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'item',
+      "args0": [],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "output_string"],
+      "canDragDuplicate": true
+    });
+  }
+};
+
+Blockly.Blocks['data_filterlistindex'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'index',
+      "args0": [],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "output_string"],
+      "canDragDuplicate": true
+    });
+  }
+};
+
+Blockly.Blocks['data_filterlist'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'filter %1 by %2 %3 %4',
+      "args0": [
+        {
+          "type": "field_variable",
+          "name": "LIST",
+          "variableTypes": [Blockly.LIST_VARIABLE_TYPE]
+        },
+        {
+          "type": "input_value",
+          "name": "INDEX"
+        },
+        {
+          "type": "input_value",
+          "name": "ITEM"
+        },
+        {
+          "type": "input_value",
+          "name": "BOOL",
+          "check": "Boolean"
+        }
+      ],
+      "category": Blockly.Categories.dataLists,
+      "extensions": ["colours_data_lists", "shape_statement"]
     });
   }
 };

@@ -215,6 +215,69 @@ Blockly.Blocks['control_if_else'] = {
   }
 };
 
+
+Blockly.Blocks['control_try_catch'] = {
+  /**
+   * Block for try-catch.
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "type": "control_try_catch",
+      "message0": "try to do",
+      "message1": "%1",
+      "message2": "if a block errors",
+      "message3": "%1",
+      "args1": [
+        {
+          "type": "input_statement",
+          "check": 'normal',
+          "name": "SUBSTACK"
+        }
+      ],
+      "args3": [
+        {
+          "type": "input_statement",
+          "check": 'normal',
+          "name": "SUBSTACK2"
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['control_throw_error'] = {
+  init: function () {
+    this.jsonInit({
+      "message0": 'throw error %1',
+      "args0": [
+        {
+          "type": "input_value",
+          "name": "ERROR"
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_end"]
+    });
+  }
+};
+
+Blockly.Blocks['control_error'] = {
+  /**
+   * pm: Block to get a try catch error.
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": "error",
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "output_string"]
+    });
+  }
+};
+
 Blockly.Blocks['control_stop'] = {
   /**
    * Block for stop all scripts.
@@ -445,6 +508,8 @@ Blockly.Blocks['control_for_each'] = {
       "type": "control_for_each",
       "message0": Blockly.Msg.CONTROL_FOREACH,
       "message1": "%1",
+      "message2": "%1",
+      "lastDummyAlign2": "RIGHT",
       "args0": [
         {
           "type": "field_variable",
@@ -460,6 +525,16 @@ Blockly.Blocks['control_for_each'] = {
           "type": "input_statement",
           "check": 'normal',
           "name": "SUBSTACK"
+        }
+      ],
+      "args2": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "repeat.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "*",
+          "flip_rtl": true
         }
       ],
       "category": Blockly.Categories.control,
@@ -561,6 +636,20 @@ Blockly.Blocks['control_delete_this_clone'] = {
       ],
       "category": Blockly.Categories.control,
       "extensions": ["colours_control", "shape_end"]
+    });
+  }
+};
+
+Blockly.Blocks['control_is_clone'] = {
+  /**
+   * pm: Block to check if a sprite is a clone.
+   * @this Blockly.Block
+   */
+  init: function () {
+    this.jsonInit({
+      "message0": "is clone?",
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "output_boolean"]
     });
   }
 };
@@ -828,7 +917,7 @@ Blockly.Blocks["control_if_return_else_return"] = {
   init: function() {
     this.jsonInit({
       "inputsInline": true,
-      "message0": "if %1 is true %2 is false %3",
+      "message0": "if %1 then %2 else %3",
       "args0": [
         {
           "type": "input_value",
@@ -978,6 +1067,26 @@ Blockly.Blocks['control_exitLoop'] = {
           "width": 24,
           "height": 24,
           "alt": "↓",
+          "flip_rtl": true
+        }
+      ],
+      "category": Blockly.Categories.control,
+      "extensions": ["colours_control", "shape_end"]
+    });
+  }
+};
+
+Blockly.Blocks['control_continueLoop'] = {
+  init: function() {
+    this.jsonInit({
+      "message0": 'continue loop %1',
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "repeat.svg",
+          "width": 24,
+          "height": 24,
+          "alt": "*",
           "flip_rtl": true
         }
       ],

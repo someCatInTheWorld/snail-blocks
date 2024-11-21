@@ -233,7 +233,7 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
     // </block>
     var block = goog.dom.createDom('block');
     block.setAttribute('type', 'procedures_call');
-    block.setAttribute('gap', 16);
+    block.setAttribute('gap', 12);
     block.appendChild(mutation);
     xmlList.push(block);
   }
@@ -244,17 +244,29 @@ Blockly.Procedures.flyoutCategory = function(workspace) {
   '</xml>'
   var blockText = 
   '<xml>' + 
+    '<block type="procedures_set">' + 
+      '<value name="PARAM"></value>' +
+      '<value name="VALUE">' +
+        '<shadow type="text">' +
+          '<field name="TEXT">value</field>' +
+        '</shadow>' +
+      '</value>' +
+    '</block>' +
+  '</xml>';
+  var block = Blockly.Xml.textToDom(blockText).firstChild;
+  var gap = Blockly.Xml.textToDom(gapText).firstChild;
+  xmlList.push(gap); xmlList.push(block);
+  blockText = 
+  '<xml>' +
     '<block type="procedures_return">' + 
       '<value name="return">' +
         '<shadow type="text">' +
           '<field name="TEXT">1</field>' +
         '</shadow>' +
       '</value>' +
-    '</block>' + 
+    '</block>' +
   '</xml>';
-  var block = Blockly.Xml.textToDom(blockText).firstChild;
-  var gap = Blockly.Xml.textToDom(gapText).firstChild
-  xmlList.push(gap);
+  block = Blockly.Xml.textToDom(blockText).firstChild;
   xmlList.push(block);
   return xmlList;
 };
@@ -427,6 +439,16 @@ Blockly.Procedures.createProcedureCallbackFactory_ = function(workspace) {
     if (mutation) {
       var returns = JSON.parse(mutation.getAttribute('returns'))
       var returnBlockText = 
+      '<next>' +
+        '<block type="procedures_set">' + 
+          '<value name="PARAM"></value>' +
+          '<value name="VALUE">' +
+            '<shadow type="text">' +
+              '<field name="TEXT">value</field>' +
+            '</shadow>' +
+          '</value>' +
+        '</block>' +
+      '</next>' +
       '<next>' +
         '<block type="procedures_return">' + 
           '<value name="return">' +

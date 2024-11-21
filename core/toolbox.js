@@ -85,10 +85,15 @@ Blockly.Toolbox = function(workspace) {
 
 };
 
-Blockly.Toolbox.menus_ = {}
-Blockly.Toolbox.registerMenu = function(name, options) {
-  Blockly.Toolbox.menus_[name] = options
-}
+Blockly.Toolbox.menus_ = {};
+Blockly.Toolbox.registerMenu = function(name, options, opt_merge) {
+  if (Blockly.Toolbox.menus_[name] && opt_merge) {
+    console.warn('registerMenu concats existing options together! if your intent was to override a menu you cant do that via existing functions.')
+    Blockly.Toolbox.menus_[name] = Blockly.Toolbox.menus_[name].concat(options)
+    return;
+  }
+  Blockly.Toolbox.menus_[name] = options;
+};
 
 /**
  * Width of the toolbox, which changes only in vertical layout.
@@ -691,15 +696,12 @@ Blockly.Toolbox.Category = function(parent, parentHtml, domTree) {
   if (options) {
     // wrap all the callbacks so they know who is calling
     this.menuOptions_ = []
+    var self = this
     for (var i = 0; i < options.length; i++) {
-      var callback = options[i].callback
-      var self = this
       this.menuOptions_.push({
         text: options[i].text,
         enabled: options[i].enabled,
-        callback: function() {
-          callback(self.id_)
-        }
+        callback: options[i].callback.bind(null, self.id_)
       })
     }
   }
@@ -760,13 +762,6 @@ Blockly.Toolbox.Category.prototype.createDom = function() {
         {'class': 'scratchCategoryItemBubble'});
     this.bubble_.style.backgroundColor = this.colour_;
     this.bubble_.style.borderColor = this.secondaryColour_;
-    var tbIcon = goog.dom.createDom('img',
-        {
-          'class': 'tbBubbleIcon',
-          'src': 'https://turbobuilder-steel.vercel.app/favicon.png',
-          'style': 'display: none;'
-        })
-    this.bubble_.appendChild(tbIcon)
   }
   this.item_.appendChild(this.bubble_);
   this.item_.appendChild(this.label_);
@@ -831,12 +826,12 @@ Blockly.Toolbox.Category.prototype.setColour = function(node) {
   var colour = node.getAttribute('colour');
   var secondaryColour = node.getAttribute('secondaryColour');
   if (goog.isString(colour)) {
-    if (colour.match(/^#[0-9a-fA-F]{6}$/)) {
+    if (colour.match(/^#[0-9a-fA-F]{6,8}$/)) {
       this.colour_ = colour;
     } else {
       this.colour_ = Blockly.hueToRgb(colour);
     }
-    if (secondaryColour.match(/^#[0-9a-fA-F]{6}$/)) {
+    if (secondaryColour.match(/^#[0-9a-fA-F]{6,8}$/)) {
       this.secondaryColour_ = secondaryColour;
     } else {
       this.secondaryColour_ = Blockly.hueToRgb(secondaryColour);

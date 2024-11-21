@@ -20,13 +20,26 @@
 
 /**
  * @fileoverview English strings.
- * @author ascii@media.mit.edu (Andrew Sliwinski)
+ * @author ascii@media.mit.edu (Andrew Sliwinski) PenguinMod for PM Scripts
  *
- * After modifying this file, run `npm run translate` from the root directory
- * to regenerate `./msg/json/en.json`.
- * IMPORTANT:
- * All message strings must use single quotes for the scripts to work properly
- */
+ * PENGUINMOD SCRIPT INSTRUCTIONS
+ * All message strings must use single quotes for the build scripts to work properly.
+ * Lines starting with "Blockly.Msg" will be evaluated as JS. This likely doesn't apply in the build scripts.
+ * Make sure to import the translations from the google sheet before running any scripts!
+ * After modifying this file:
+ * 1. Run the i18n/create_en_msgs script and replace msg/js/en.js and msg/json/en.json with the output
+ * 2. Run the i18n/messages_fillout script for sheet creation (make sure you imported the translations from the google sheet first)
+ * 2.5. If you modified the text of a translation key, run i18n/messages_override with the generated filled_scratch_msgs.js from step 2 as an argument to the script & then specify the changed keys as arguments after.
+ * 3. Generate an XLSX file with i18n/create_base_xlsx for translation
+ * 4. Please update the Google Sheets if you have access (otherwise, someone with access needs to update it later)
+*/
+
+// SCRATCH SCRIPT INSTRUCTIONS (NOT REQUIRED IN PM)
+// After modifying this file, run `npm run translate` from the root directory
+// to regenerate `./msg/json/en.json`.
+// IMPORTANT:
+// All message strings must use single quotes for the scripts to work properly
+
 'use strict';
 
 goog.provide('Blockly.Msg.en');
