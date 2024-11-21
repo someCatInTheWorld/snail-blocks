@@ -19,7 +19,8 @@ jobs:
       
       - name: Rebuild
         run: |
-         sudo apt install python2-minimal
+         sudo apt update
+         sudo apt-get install python2-minimal
          npm install
          npm run translate
        
