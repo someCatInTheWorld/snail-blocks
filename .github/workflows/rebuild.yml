@@ -46,6 +46,7 @@ jobs:
           rm -rf dist/*
           rm -rf media/*
           git rm -rf .
+          echo '{"name":"scratch-blocks","version":"0.1.0","description":"built scratch-blocks files","license":"GPL-3.0","repository":{},"main":"./dist/vertical.js","browser":"./dist/vertical.js","scripts":{},"dependencies":{},"devDependencies":{}}' > ./package.json
           
       - name: Download built-dist
         uses: actions/download-artifact@v3.0.1
