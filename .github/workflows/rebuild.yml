@@ -45,6 +45,7 @@ jobs:
         run: |
           rm -rf dist/*
           rm -rf media/*
+          git rm -rf .
           
       - name: Download built-dist
         uses: actions/download-artifact@v3.0.1
