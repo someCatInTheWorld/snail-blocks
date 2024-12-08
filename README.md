@@ -1,4 +1,4 @@
-# PenguinMod/scratch-blocks
+# PenguinMod-Blocks
 
 <!-- ## Playgrounds
 
