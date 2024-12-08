@@ -1373,9 +1373,9 @@ Blockly.BlockSvg.prototype.renderDrawTop_ = function(steps, rightEdge) {
  */
 Blockly.BlockSvg.prototype.renderDrawRight_ = function(steps,
     inputRows, iconWidth) {
+  var cursorX = 0;
+  var cursorY = 0;
   if (!this.isCollapsed()) {
-    var cursorX = 0;
-    var cursorY = 0;
     var connectionX, connectionY;
     for (var y = 0, row; row = inputRows[y]; y++) {
       cursorX = row.paddingStart;
