@@ -341,11 +341,11 @@ Blockly.BlockSvg.INPUT_SHAPE_HEXAGONAL_WIDTH = 12 * Blockly.BlockSvg.GRID_UNIT;
 Blockly.BlockSvg.INPUT_SHAPE_SQUARE =
     Blockly.BlockSvg.TOP_LEFT_CORNER_START +
     Blockly.BlockSvg.TOP_LEFT_CORNER +
-    ' h ' + (13 * Blockly.BlockSvg.GRID_UNIT - 2 * Blockly.BlockSvg.CORNER_RADIUS) +
+    ' h ' + (12 * Blockly.BlockSvg.GRID_UNIT - 2 * Blockly.BlockSvg.CORNER_RADIUS) +
     Blockly.BlockSvg.TOP_RIGHT_CORNER +
-    ' v ' + (9.5 * Blockly.BlockSvg.GRID_UNIT - 2 * Blockly.BlockSvg.CORNER_RADIUS) +
+    ' v ' + (8 * Blockly.BlockSvg.GRID_UNIT - 2 * Blockly.BlockSvg.CORNER_RADIUS) +
     Blockly.BlockSvg.BOTTOM_RIGHT_CORNER +
-    ' h ' + (-13 * Blockly.BlockSvg.GRID_UNIT + 2 * Blockly.BlockSvg.CORNER_RADIUS) +
+    ' h ' + (-12 * Blockly.BlockSvg.GRID_UNIT + 2 * Blockly.BlockSvg.CORNER_RADIUS) +
     Blockly.BlockSvg.BOTTOM_LEFT_CORNER +
     ' z';
 
@@ -353,7 +353,7 @@ Blockly.BlockSvg.INPUT_SHAPE_SQUARE =
  * Width of empty square input shape.
  * @const
  */
-Blockly.BlockSvg.INPUT_SHAPE_SQUARE_WIDTH = 3.75 * Blockly.BlockSvg.GRID_UNIT;
+Blockly.BlockSvg.INPUT_SHAPE_SQUARE_WIDTH = 12 * Blockly.BlockSvg.GRID_UNIT;
 
 /**
  * SVG path for an empty round input shape.

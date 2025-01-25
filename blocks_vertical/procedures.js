@@ -40,7 +40,7 @@ goog.require('Blockly.ScratchBlocks.VerticalExtensions');
  */
 Blockly.ScratchBlocks.ProcedureUtils.callerMutationToDom = function() {
   var container = document.createElement('mutation');
-  container.setAttribute('proccode', this.procCode_);
+  container.setAttribute('proccode', this.procCode_.replaceAll('<', '&lt;'));
   container.setAttribute('argumentids', JSON.stringify(this.argumentIds_));
   container.setAttribute('warp', JSON.stringify(this.warp_));
   container.setAttribute('returns', JSON.stringify(this.output_));
@@ -58,7 +58,7 @@ Blockly.ScratchBlocks.ProcedureUtils.callerMutationToDom = function() {
  * @this Blockly.Block
  */
 Blockly.ScratchBlocks.ProcedureUtils.callerDomToMutation = function(xmlElement) {
-  this.procCode_ = xmlElement.getAttribute('proccode');
+  this.procCode_ = xmlElement.getAttribute('proccode').replaceAll('&lt;', '<');
   this.generateShadows_ =
       JSON.parse(xmlElement.getAttribute('generateshadows'));
   this.argumentIds_ = JSON.parse(xmlElement.getAttribute('argumentids'));
@@ -93,7 +93,7 @@ Blockly.ScratchBlocks.ProcedureUtils.definitionMutationToDom = function(
   if (opt_generateShadows) {
     container.setAttribute('generateshadows', true);
   }
-  container.setAttribute('proccode', this.procCode_);
+  container.setAttribute('proccode', this.procCode_.replaceAll('<', '&lt;'));
   container.setAttribute('argumentids', JSON.stringify(this.argumentIds_));
   container.setAttribute('argumentnames', JSON.stringify(this.displayNames_));
   container.setAttribute('argumentdefaults', JSON.stringify(this.argumentDefaults_));
@@ -113,7 +113,7 @@ Blockly.ScratchBlocks.ProcedureUtils.definitionMutationToDom = function(
  * @this Blockly.Block
  */
 Blockly.ScratchBlocks.ProcedureUtils.definitionDomToMutation = function(xmlElement) {
-  this.procCode_ = xmlElement.getAttribute('proccode');
+  this.procCode_ = xmlElement.getAttribute('proccode').replaceAll('&lt;', '<');
   this.warp_ = JSON.parse(xmlElement.getAttribute('warp'));
 
   var prevArgIds = this.argumentIds_;
